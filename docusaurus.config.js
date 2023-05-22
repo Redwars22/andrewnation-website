@@ -68,7 +68,7 @@ const config = {
         title: 'AndrewNation',
         logo: {
           alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          src: 'https://cdn3.iconfinder.com/data/icons/macosxstyle/macosxstyle_png/128/Xcode.png',
         },
         items: [
           {
