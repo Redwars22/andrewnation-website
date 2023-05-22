@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'AndrewNation',
-  tagline: 'Dinosaurs are cool',
+  tagline: 'Um programador front-end com curiosidade infinita',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -28,8 +28,8 @@ const config = {
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: 'pt-br',
+    locales: ['pt-br'],
   },
 
   presets: [
@@ -62,7 +62,8 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      image:
+        'https://cdn3.iconfinder.com/data/icons/macosxstyle/macosxstyle_png/128/Xcode.png',
       navbar: {
         title: 'AndrewNation',
         logo: {
@@ -75,6 +76,16 @@ const config = {
             sidebarId: 'tutorialSidebar',
             position: 'left',
             label: 'Portfólio',
+          },
+          {
+            position: 'left',
+            label: 'Trajetória Profissional e Acadêmica',
+            to: 'a',
+          },
+          {
+            position: 'left',
+            label: 'Sobre mim',
+            to: 'aboutme',
           },
           {
             href: 'https://github.com/facebook/docusaurus',
