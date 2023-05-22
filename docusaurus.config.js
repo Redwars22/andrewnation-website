@@ -80,7 +80,7 @@ const config = {
           {
             position: 'left',
             label: 'Trajetória Profissional e Acadêmica',
-            to: 'a',
+            to: 'docs',
           },
           {
             position: 'left',
