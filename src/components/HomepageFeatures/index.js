@@ -18,7 +18,8 @@ const FeatureList = [
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        
+        Vários tópicos me chamam a atenção, como astronomia, ciência, tecnologia, linguística, ficção, etc. 
+        Mas nunca e canso de ir atrás do conhecimento, preciso sempre de mais e mais!
       </>
     ),
   },
