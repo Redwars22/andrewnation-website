@@ -137,7 +137,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} AndrewNation (André Pereira). Site criado com o Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
