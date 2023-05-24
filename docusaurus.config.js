@@ -80,6 +80,11 @@ const config = {
             to: 'aboutme',
           },
           {
+            position: 'left',
+            label: 'Blog',
+            to: 'blog',
+          },
+          {
             href: 'https://github.com/Redwars22',
             label: 'GitHub',
             position: 'right',
@@ -114,10 +119,10 @@ const config = {
           {
             title: 'Mais',
             items: [
-              /*{
+              {
                 label: 'Blog',
                 to: '/blog',
-              },*/
+              },
               {
                 label: 'GitHub',
                 href: 'https://github.com/Redwars22',
