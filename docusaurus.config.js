@@ -72,7 +72,7 @@ const config = {
           {
             position: 'left',
             label: 'Trajetória Profissional e Acadêmica',
-            to: 'aboutme',
+            to: 'professional',
           },
           {
             position: 'left',
