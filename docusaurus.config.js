@@ -90,38 +90,34 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'Links Úteis',
             items: [
               {
-                label: 'Tutorial',
+                label: 'Portfólio de Projetos',
                 to: '/docs/intro',
               },
             ],
           },
           {
-            title: 'Community',
+            title: 'Outros Links',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'WattPad',
+                href: 'https://www.wattpad.com/user/andrewnation69',
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                label: 'Entre em contato',
+                href: 'mailto:andrewpereira.megabyte@gmail.com',
               },
             ],
           },
           {
-            title: 'More',
+            title: 'Mais',
             items: [
-              {
+              /*{
                 label: 'Blog',
                 to: '/blog',
-              },
+              },*/
               {
                 label: 'GitHub',
                 href: 'https://github.com/Redwars22',
