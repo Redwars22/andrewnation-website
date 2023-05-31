@@ -13,7 +13,10 @@
 
 ## Cursos Complementares
 
-1- **Ética no Desenvolvimento de Sistemas:** Fundação Bradesco. *Carga Horária 8 horas.*
+1- **Ética no Desenvolvimento de Sistemas:** Fundação Bradesco. *Carga Horária 8 horas.* 
+2- **Gerenciamento de Projetos:** Fundação Bradesco. *Carga Horária 10 horas.*
+
+[CERTIFICADOS]()
 
 ## Habilidades e conhecimentos adquiridos (hard-skills):
 
