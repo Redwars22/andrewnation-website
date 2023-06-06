@@ -25,4 +25,6 @@
 - Desenvolvimento web com React e NextJS + TypeScript e testes com Cypress.
 - Estilização com Sass, Tailwind e Bootstrap.
 - Inglês e Espanhol em nível intermediário.
-- LinuxMint, Ubuntu e Manjaro.
+- LinuxMint, Ubuntu, Fedora e Manjaro.
+- Deploy com Vercel
+- Criação de sites e documentação com Markdown e Docusaurus
