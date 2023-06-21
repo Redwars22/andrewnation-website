@@ -23,4 +23,4 @@ Para acessar o Orionboard, use as seguintes credenciais de login:
 O Orionboard funciona na web e futuramente terá um aplicativo para Android feito com ReactNative. O Orionboard foi feito com MUI, Sass, TypeScript e React.
 
 ## Código-fonte e downloads
-Você pode acessá-lo [aqui](https://oriondashboard.vercel.app/dashboard).
+Você pode acessá-lo [aqui](https://oriondashboard.vercel.app/dashboard). Já o repositório pode ser acessado [aqui](https://github.com/Redwars22/orion-dashboard).
