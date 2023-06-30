@@ -3,7 +3,7 @@
 O Orionboard é um painel de controle empresarial que permite gerenciar a empresa em um só lugar.
 
 :::warning AVISO!
-Essa aplicação ainda está nas fases iniciais do desenvolvimento!
+Essa aplicação está nas fases finais do desenvolvimento e testes!
 :::
 
 ## Recursos
