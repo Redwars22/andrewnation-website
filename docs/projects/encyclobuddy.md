@@ -1,4 +1,4 @@
-# Encyclobuddy
+# EncycloBuddy
 
 :::info AVISO
 O EncycloBuddy ainda está nos estágios bem iniciais do desenvolvimento e, por isso, ainda não há nenhuma prévia disponível. 
