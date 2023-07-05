@@ -21,6 +21,8 @@
 
 2- **Gerenciamento de Projetos:** Fundação Bradesco. *Carga Horária 10 horas.*
 
+3- **Fundamentos das Aplicações Móveis:** Fundação Bradesco. *Carga Horária 12 horas.* 
+
 [CERTIFICADOS](https://github.com/Redwars22/andrewnation-website/tree/main/certfs)
 
 ## Habilidades e conhecimentos adquiridos (hard-skills):
