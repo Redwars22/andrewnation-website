@@ -14,6 +14,8 @@ URL original: `https://en.wikipedia.org/wiki/Russo-Ukrainian_War`
 
 URL substituído: `https://encyclobuddy.vercel.app/Russo-Ukrainian_War&&en`
 
+![EncycloBuddy](https://andrewnationdev.vercel.app/img/encyclobuddy.png)
+
 ## Plataformas
 O EncycloBuddy foi feito usando a API REST da Wikipedia, React e TypeScript.
 
