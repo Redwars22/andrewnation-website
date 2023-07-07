@@ -1,5 +1,5 @@
 # AndrewSH
-![andrewsh](https://andrewnationdev.vercel.app/img/encyclobuddy.png)
+![andrewsh](https://andrewnationdev.vercel.app/img/terminal.png)
 
 O AndrewSH é um pequeno experimento de terminal/shell (não sei se já está no estágio de ser chamado de shell) construído com o Go que te permite executar comandos.
 
