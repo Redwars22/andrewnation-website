@@ -1,4 +1,5 @@
 # Algometer
+
 O Algometer é uma ferramenta de linha de comando feita com Node para medir o tempo de execução de algoritmos JavaScript/TypeScript.
 
 ![algometer](https://andrewnationdev.vercel.app/img/algometer.png)
@@ -12,7 +13,7 @@ O Algometer é uma ferramenta de linha de comando feita com Node para medir o te
 ```tsx
 import Algometer from "../base/algometer";
 
-Algometer(()=>{
+Algometer("Algoritmo Sem Nome", ()=>{
     let result: number;
     const k = 12;
 
