@@ -3,7 +3,7 @@
 Gabriel Against The Aliens é um jogo para Android feito com GDevelop e Programação Orientada a Eventos no qual o Gabriel, o protagonista, foi parar num planeta bem distante da Terra e tem que encontrar o Eric, seu namorado, que foi sequestrado por alienígenas.
 
 :::warning AVISO
-O jogo está 60% concluído. Ainda falta adicionar mais um mapa e dar mais uma polida geral nele. Mas no geral já está jogável, embora muito provavelmente vão ter alguns bugs aqui e ali que podem ou não atrapalhar a jogabilidade.
+O jogo está 90% concluído. Ainda falta dar mais uma polida geral nele no que tange à experiência do usuário. Mas no geral já está jogável, embora muito provavelmente vão ter alguns bugs aqui e ali que podem ou não atrapalhar a jogabilidade.
 :::
 
 ## Plot
