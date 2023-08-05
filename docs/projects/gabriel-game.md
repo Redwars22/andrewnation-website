@@ -21,6 +21,7 @@ O jogo foi desenvolvido para Android usando a engine GDevelop com programação 
 - Para restaurar as vidas, toque nos antídotos que vão estar espalhados pelo mapa.
 - Para passar para o próximo nível é necessário juntar a quantidade mínima de anéis de diamante e encontrar o portal azul (no mapa 3, o portal é verde e ele precisa encontrar o Eric primeiro).
 - No mapa 4, é necessário evitar os obstáculos num corredor estreito. Alguns deles causam morte instantânea, então atenção!
+- Para atirar nos alienígenas, você pode tocar sobre eles. Toque no botão "SUPER ATAQUE" (DISPONÍVEL EM BREVE) para lançar um ataque ainda mais poderoso (esse é ativado aleatoriamente uma vez a cada partida, portanto use sabiamente). 
 
 ## Níveis
 - **MAPA 1:** é um mundo bem verde com um mar bonito. Nesse caso não há nenhum perigo para o protagonista, a não ser ser atacado pelos alienígenas. Ele pode se esconder em fortes espalhados ao longo do mapa.
