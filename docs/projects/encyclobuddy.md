@@ -1,7 +1,7 @@
 # EncycloBuddy
 
 :::warning ATENÇÃO
-O EncycloBuddy está nos estágios iniciais de desenvolvimento e, portanto, você poderá encontrar vários bugs. 
+O EncycloBuddy está em estágio de pré-lançamento e, portanto, você poderá encontrar alguns bugs. Você pode abrir um issue no repositório do projeto caso encontre algum. Obrigado pela atenção. 
 :::
 
 O EncycloBuddy é um cliente alternativo para a Wikipedia que usa a API da Wikimedia para obter os artigos. 
@@ -18,6 +18,19 @@ URL substituído: `https://encyclobuddy.vercel.app/Russo-Ukrainian_War&&en`
 
 ## Plataformas
 O EncycloBuddy foi feito usando a API REST da Wikipedia, React e TypeScript.
+
+## Idiomas
+O EncycloBuddy possui a interface somente em inglês até o momento, mas suporta artigos da Wikipedia nos seguintes idiomas:
+
+- Inglês
+- Mirandês
+- Asturiano
+- Latim
+- Alemão
+- Italiano
+- Espanhol
+- Francês
+- Português
 
 ## Código-fonte e downloads
 Uma versão prévia pode ser acessada [aqui](https://encyclobuddy.vercel.app/Aranha&&pt) e o repositório oficial [aqui](https://github.com/Redwars22/encyclobuddy).
