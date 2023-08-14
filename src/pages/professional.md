@@ -34,3 +34,4 @@
 - LinuxMint, Ubuntu, Fedora e Manjaro.
 - Deploy com Vercel
 - Criação de sites e documentação com Markdown e Docusaurus
+- Criação e publicação de bibliotecas NPM
