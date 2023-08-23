@@ -11,5 +11,8 @@ O AndrewSH está mais ou menos funcional, mas não totalmente livre de bugs. Use
 ## Recursos
 No momento, o AndrewSH só tem funções básicas como intepretar comandos BASH, executar programas, ler argumentos de linha de comando e exibir a saída e mensagens de erro dos comandos executados na tela. Mais funcionalidades provavelmente serão adicionadas futuramente.
 
+💻 **WINDOWS: ** Executar programas e a maioria dos comandos do Windows (exceto CD).
+🐧 **LINUX: ** Executar programas e a maioria dos comandos do Linux. O CD precisa pressionar ENTER duas vezes e o comando LS ainda não funciona.
+
 ## Download e código-fonte
-Você pode baixá-lo [aqui](https://github.com/Redwars22/andrewsh/releases) (no momento, apenas para Linux e em fase experimental para Windows). Você também pode visitar o repositório oficial [aqui](https://github.com/Redwars22/andrewsh)
+Você pode baixá-lo [aqui](https://github.com/Redwars22/andrewsh/releases) (Linux ou Windows). Você também pode visitar o repositório oficial [aqui](https://github.com/Redwars22/andrewsh)
