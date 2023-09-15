@@ -2,6 +2,8 @@
 
 O Deathnote é um bloco de notas minimalista para Windows escrito para a plataforma .NET usando Visual Basic.
 
+![deathnote](https://andrewnationdev.vercel.app/img/deathnote.png)
+
 ## Recursos
 
 - Contagem de palavras
