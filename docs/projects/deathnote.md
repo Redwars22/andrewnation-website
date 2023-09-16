@@ -8,11 +8,14 @@ O Deathnote é um bloco de notas minimalista para Windows escrito para a platafo
 
 - Contagem de palavras
 - Inserção de snippets Markdown e HTML
+- Pré-visualização de código HTML
+- Inserção de estampas de data e hora
+- Suporte a multijanelas
 - Customização de tamanho de fonte e cor
 - Tema claro e escuro (e possivelmente mais!)
 
-::: info
-Mais informações em breve!
+::: warn AVISO
+O Deathnote ainda está no processo inicial de desenvolvimento (Release Preview) e, portanto, alguns recursos podem estar faltando e/ou podem não funcionar como esperado. Usar com cautela!
 :::
 
 ## Código-fonte e downloads
