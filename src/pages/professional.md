@@ -37,3 +37,5 @@
 - Deploy com Vercel
 - Criação de sites e documentação com Markdown e Docusaurus
 - Criação e publicação de bibliotecas NPM
+- Desenvolvimento desktop com VB.NET e C# (WindowsForms e Visual Studio 2022)
+- Desenvolvimento de apps web com Svelte + TypeScript
