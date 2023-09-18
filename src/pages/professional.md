@@ -23,6 +23,8 @@
 
 3- **Fundamentos das Aplicações Móveis:** Fundação Bradesco. *Carga Horária 12 horas.* 
 
+4- **Linguagem de Programação C# Básico:** Fundação Bradesco. *Carga Horária 5 horas*
+
 [CERTIFICADOS](https://github.com/Redwars22/andrewnation-website/tree/main/certfs)
 
 ## Habilidades e conhecimentos adquiridos (hard-skills):

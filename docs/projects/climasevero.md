@@ -12,6 +12,7 @@ O ClimaSevero é um programa de previsão do tempo que usa a API do OpenWeatherM
 - Sensação térmica
 - Pressão
 - Descrição do clima
+- Velocidade do vento
 
 ## Plataformas e Tecnologias
 
