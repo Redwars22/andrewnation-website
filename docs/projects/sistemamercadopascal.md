@@ -21,4 +21,4 @@ Sistema Mercado (Pascal) é um sistema de caixa de supermercado feito em Object 
 Feito no Lazarus em Object Pascal. Roda no Windows e posteriormente será compilado para Linux.
 
 ## Codigo-fonte
-Você pode baixar .EXE do sistema aqui [aqui](https://github.com/Redwars22/Deathnote/releases/tag/v1.0) e obter seu código-fonte e/ou reportar bugs [aqui em seu repositório oficial](https://github.com/Redwars22/sistema-supermercado-pascal).
+Você pode baixar .EXE do sistema [aqui](https://github.com/Redwars22/sistema-supermercado-pascal/releases/tag/v1.0) e obter seu código-fonte e/ou reportar bugs [aqui em seu repositório oficial](https://github.com/Redwars22/sistema-supermercado-pascal).
