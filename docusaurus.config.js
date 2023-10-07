@@ -85,6 +85,11 @@ const config = {
             to: 'blog',
           },
           {
+            position: 'left',
+            label: 'AndrewNation Games',
+            to: 'games'
+          },
+          {
             href: 'https://github.com/Redwars22',
             label: 'GitHub',
             position: 'right',
