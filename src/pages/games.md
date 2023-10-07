@@ -27,5 +27,6 @@ O jogo do Biverse Theory - Quando Andrew, Gabriel, Eric e Nicole achavam que tin
 - Selecione o poder e toque duas vezes no local onde deseja ativar o poder.
 
 ### Plataformas e downloads
+
 Está disponível para Android em fase BETA no seguinte link: [aqui](https://github.com/Redwars22/biversetheory-game/releases)
 ---
