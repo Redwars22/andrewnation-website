@@ -25,6 +25,8 @@
 
 4- **Linguagem de Programação C# Básico:** Fundação Bradesco. *Carga Horária 5 horas*
 
+5- **Linguagem de Programação C# Avançado:** Fundação Bradesco. *Carga Horária 8 horas*
+
 [CERTIFICADOS](https://github.com/Redwars22/andrewnation-website/tree/main/certfs)
 
 ## Habilidades e conhecimentos adquiridos (hard-skills):
@@ -32,10 +34,12 @@
 - Desenvolvimento Android com ReactNative e Expo + TypeScript e testes com Jest.
 - Desenvolvimento web com React e NextJS + TypeScript e testes com Cypress.
 - Estilização com Sass, Tailwind e Bootstrap.
-- Inglês e Espanhol em nível intermediário.
+- Inglês e Espanhol em nível conversacional, além de um conhecimento num nível mais baixo em russo, italiano e francês.
 - LinuxMint, Ubuntu, Fedora e Manjaro.
 - Deploy com Vercel
 - Criação de sites e documentação com Markdown e Docusaurus
 - Criação e publicação de bibliotecas NPM
 - Desenvolvimento desktop com VB.NET e C# (WindowsForms e Visual Studio 2022)
 - Desenvolvimento de apps web com Svelte + TypeScript
+- Desenvolvimento de apps Desktop Windows e Linux com Lazarus e Pascal
+- Consumo de APIs em aplicações JavaScript/TypeScript em React/ReactNative com o intermédio do ReactQuery
