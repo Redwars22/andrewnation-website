@@ -43,3 +43,4 @@
 - Desenvolvimento de apps web com Svelte + TypeScript
 - Desenvolvimento de apps Desktop Windows e Linux com Lazarus e Pascal
 - Consumo de APIs em aplicações JavaScript/TypeScript em React/ReactNative com o intermédio do ReactQuery
+- Aplicativos desktop multiplataforma com C#, Mono e GTK.
