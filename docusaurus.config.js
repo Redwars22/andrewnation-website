@@ -90,6 +90,11 @@ const config = {
             to: 'games'
           },
           {
+            position: 'left',
+            label: 'Loja',
+            to: 'store'
+          },
+          {
             href: 'https://github.com/Redwars22',
             label: 'GitHub',
             position: 'right',
