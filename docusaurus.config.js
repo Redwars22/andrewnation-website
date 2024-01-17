@@ -92,7 +92,7 @@ const config = {
           {
             position: 'left',
             label: 'Loja',
-            to: 'store'
+            href: 'https://www.buymeacoffee.com/andrewnation/extras'
           },
           {
             href: 'https://github.com/Redwars22',
