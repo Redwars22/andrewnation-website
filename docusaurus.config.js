@@ -86,11 +86,6 @@ const config = {
           },
           {
             position: 'left',
-            label: 'AndrewNation Games',
-            to: 'games'
-          },
-          {
-            position: 'left',
             label: 'Loja',
             href: 'https://www.buymeacoffee.com/andrewnation/extras'
           },
@@ -150,3 +145,12 @@ const config = {
 };
 
 module.exports = config;
+
+/*
+
+          {
+            position: 'left',
+            label: 'AndrewNation Games',
+            to: 'games'
+          },
+*/
