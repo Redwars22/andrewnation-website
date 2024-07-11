@@ -90,6 +90,11 @@ const config = {
             href: 'https://www.buymeacoffee.com/andrewnation/extras'
           },
           {
+            position: 'Left',
+            label: 'Livros',
+            href: 'https://redwars22.github.io/andrewnationautor/'
+          },
+          {
             href: 'https://github.com/Redwars22',
             label: 'GitHub',
             position: 'right',
@@ -111,10 +116,14 @@ const config = {
           {
             title: 'Outros Links',
             items: [
-              {
+              /*{
                 label: 'WattPad',
                 href: 'https://www.wattpad.com/user/andrewnation69',
-              },
+              },*/
+              {
+                label: 'Livros',
+                href: 'https://redwars22.github.io/andrewnationautor/'
+              }
               {
                 label: 'Entre em contato',
                 href: 'mailto:andrewpereira.megabyte@gmail.com',
