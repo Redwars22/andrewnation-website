@@ -90,7 +90,7 @@ const config = {
             href: 'https://www.buymeacoffee.com/andrewnation/extras'
           },
           {
-            position: 'Left',
+            position: 'left',
             label: 'Livros',
             href: 'https://redwars22.github.io/andrewnationautor/'
           },
