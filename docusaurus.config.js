@@ -123,7 +123,7 @@ const config = {
               {
                 label: 'Livros',
                 href: 'https://redwars22.github.io/andrewnationautor/'
-              }
+              },
               {
                 label: 'Entre em contato',
                 href: 'mailto:andrewpereira.megabyte@gmail.com',
