@@ -3,7 +3,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 ![Shopzen](https://th.bing.com/th/id/R.90cca77a154bedb2efb59880d8b5215e?rik=wLMOEI4AH2vpmQ&pid=ImgRaw&r=0)
 
-[BAIXAR APK]()
 
 ![Expo](https://img.shields.io/badge/expo-1C1E24?style=for-the-badge&logo=expo&logoColor=#D04A37)
 ![React Query](https://img.shields.io/badge/-React%20Query-FF4154?style=for-the-badge&logo=react%20query&logoColor=white)
