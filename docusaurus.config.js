@@ -126,7 +126,7 @@ const config = {
               },
               {
                 label: 'Entre em contato',
-                href: 'mailto:andrewpereira.megabyte@gmail.com',
+                href: 'mailto:andrewnationdev@gmail.com',
               },
             ],
           },
