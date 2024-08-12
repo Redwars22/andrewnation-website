@@ -87,7 +87,7 @@ const config = {
           {
             position: "left",
             label: 'Linguística',
-            to: 'blog'
+            to: 'blog/tags/linguistica'
           },
           {
             position: 'left',
