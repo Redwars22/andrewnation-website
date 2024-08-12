@@ -85,6 +85,11 @@ const config = {
             to: 'blog',
           },
           {
+            position: "left",
+            label: 'Linguística',
+            to: 'blog'
+          },
+          {
             position: 'left',
             label: 'Loja',
             href: 'https://www.buymeacoffee.com/andrewnation/extras'
