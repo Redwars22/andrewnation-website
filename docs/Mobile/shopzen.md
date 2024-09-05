@@ -1,26 +1,30 @@
 # Shopzen
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+O Shopzen é o modelo de aplicativo de loja simples feito em ReactNative + JS com interface Material UI, tela de login (local e offline até o momento), carrinho de compras e tela de descrição do produto com exibição de comentários, seletor de tamanho/cor e etc.
 
-![Shopzen](https://th.bing.com/th/id/R.90cca77a154bedb2efb59880d8b5215e?rik=wLMOEI4AH2vpmQ&pid=ImgRaw&r=0)
-
+![Shopzen](static/img/shopzen/shopzen1.png)
+![Shopzen](static/img/shopzen/shopzen2.png)
+![Shopzen](static/img/shopzen/shopzen3.png)
+![Shopzen](static/img/shopzen/shopzen4.png)
 
 ![Expo](https://img.shields.io/badge/expo-1C1E24?style=for-the-badge&logo=expo&logoColor=#D04A37)
 ![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
 ![React Native](https://img.shields.io/badge/react_native-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+
+## Credenciais de Login para Teste
+> E-mail: 12345@gmail.com
+
+> Senha: 12345
+
+## Recursos
+- Carrinho de compras (adicionar item, remover item e esvaziar carrinho)
+- Tela de autenticação
+- Tela de detalhes de produtos
+
+## Tecnologias Usadas
 - Zustand
 - Expo Vector Icon
 - ReactNative Paper
-
-## Credenciais de Login para Teste
-> email: 12345@gmail.com
-
-> senha: 12345
-
-## Recursos
-
-## Tecnologias Usadas
-
 
 ## Código-fonte e downloads
 

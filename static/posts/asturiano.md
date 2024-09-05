@@ -1,3 +1,4 @@
+O asturiano, diferentemente da maioria das línguas românicas, conserva o gênero neutro
 Os artigos são el, la, lo...
 
 Plurais são -os e -es
