@@ -1,10 +1,10 @@
 # Shopzen
 O Shopzen é o modelo de aplicativo de loja simples feito em ReactNative + JS com interface Material UI, tela de login (local e offline até o momento), carrinho de compras e tela de descrição do produto com exibição de comentários, seletor de tamanho/cor e etc.
 
-![Shopzen](static/img/shopzen/shopzen1.png)
-![Shopzen](static/img/shopzen/shopzen2.png)
-![Shopzen](static/img/shopzen/shopzen3.png)
-![Shopzen](static/img/shopzen/shopzen4.png)
+![Shopzen](https://andrewnationdev.vercel.app/img/shopzen/shopzen1.png)
+![Shopzen](https://andrewnationdev.vercel.app/img/shopzen/shopzen2.png)
+![Shopzen](https://andrewnationdev.vercel.app/img/shopzen/shopzen3.png)
+![Shopzen](https://andrewnationdev.vercel.app/img/shopzen/shopzen4.png)
 
 ![Expo](https://img.shields.io/badge/expo-1C1E24?style=for-the-badge&logo=expo&logoColor=#D04A37)
 ![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
