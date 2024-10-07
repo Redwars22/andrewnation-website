@@ -1,6 +1,6 @@
 # Andrew Testing Library (Python)
 
-![logo](https://camo.githubusercontent.com/7e838f0f7b14285df165d55aad5c2b01842b6a58e30c641fe7659842ba59810b/68747470733a2f2f63646e322e69636f6e66696e6465722e636f6d2f646174612f69636f6e732f636f726f6e612d76697275732d636f7669642d31392d31342f3531322f31345f466c61736b5f6c61625f72657365617263685f76697275732d3132382e706e67)
+![logo](https://github.com/Redwars22/andrew-testlib-py/blob/main/example.jpg)
 
 O Andrew Testing Library para Python é uma ferramenta de teste, análoga ao Andrew Testing Library que é um outro projeto meu feito para testes em TS/JS. Ela é bem mais simples que ferramentas mais parrudas, mas para testes simples deve cumprir bem seu objetivo.
 
