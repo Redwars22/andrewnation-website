@@ -13,3 +13,5 @@ O Andrew Testing Library foi escrito com TypeScript e, para o terminal, ele usa 
 ## Código-fonte e downloads
 
 Você pode obter o código-fonte do Andrew Testing Library e baixar sua versão mais recente [clicando aqui](https://github.com/Redwars22/andrew-testing-library).
+
+Você pode instalá-lo com o comando `npm i andrew-testing`.
