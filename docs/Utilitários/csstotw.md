@@ -5,3 +5,7 @@ O CSSToTW é uma ferramenta de linha de comando escrita em TypeScript que lhe pe
 ![image](https://user-images.githubusercontent.com/26885598/210166982-306ceb02-b895-4cdf-9440-10166a90f374.png)
 
 Instalá-lo e usá-lo é bem simples: 
+
+- clone o repositório com `git clone https://github.com/Redwars22/csstotw.git`
+- use `npm install` para baixar as dependências
+- digite `node csstotw.js` para executá-lo
