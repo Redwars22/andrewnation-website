@@ -7,19 +7,22 @@ Andrew JRocket is a simple and lightweight testing tool for Java projects. It's 
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
 ![Eclipse](https://img.shields.io/badge/Eclipse-2C2255?style=for-the-badge&logo=eclipse&logoColor=white)
 
-# SETTING UP JROCKET
 
-- Download and put it somewhere in your project.
-- Make the class you want to run JRocket at extend the JRocketTesting class
-- Run the `begin()` function and pass the name of the test suit as its argument.
-- Add the matchers and run the tests after that function.
-- Finish the text with `end()`.
-- Once the `end()` function is run, a report will be print to the screen with the execution time and the number of passed and failed tests.
+[Visite a página do projeto no GitHub](https://github.com/Redwars22/andrew-jrocket)
+
+# CONFIGURANDO E USANDO O JROCKET
+
+- Baixe e coloque em qualquer lugar no projeto.
+- Faça a classe na qual você quer executar o JRocket herdar (`extends`) da classe JRocketTesting.
+- Execute a função `begin(String suite)` e passe o nome da suíte de teste como seu argumento.
+- Adicione os matchers e execute os testes após a função `begin(String suite)`.
+- Termine o teste com `end()`.
+- Assim que a função `end()` for executada, o JRocket vai exibir um relatório na tela com o tempo de execução e o número de testes que passaram ou falharam,
 
 ```java
 public class Example extends JRocketTesting {
 	public void test() {
-		begin("Compare two arrays");
+		begin("Comparar dois vetores");
 		int [] x = {1,2,3,4};
 		int [] y = {1,2,3,4};
 		
@@ -30,9 +33,9 @@ public class Example extends JRocketTesting {
 ```
 
 # MATCHERS
-There are more than 20 matchers in JRocket.
+Há mais de 20 matchers no JRocket que você pode usar para testes!
 
-## COMPARISON
+## COMPARAÇÃO DE VALORES
 - `assertEquals(int x, int y)`
 - `assertEquals(float x, floats y)`
 - `assertEquals(double x, double y)`
@@ -49,14 +52,14 @@ There are more than 20 matchers in JRocket.
 - `assertLessOrEqual(float x, float y)`
 - `assertLessOrEqual(double x, double y)`
 
-## STRING COMPARISON
+## COMPARAÇÃO DE STRINGS DE TEXTO
 - `assertEquals(String x, String y)`
 
-## BOOLEAN EXPRESSIONS
+## EXPRESSÕES BOOLEANAS
 - `assertTrue(boolean expr)`
 - `assertFalse(boolean expr)`
 
-## UNIDIMENSIONAL ARRAYS
+## VETORES UNIDIMENSIONAIS
 - `assertEquals(int [] x, int [] y)`
 - `assertEquals(float [] x, floats [] y)`
 - `assertEquals(double [] x, double [] y)`
