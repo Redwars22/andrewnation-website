@@ -1,6 +1,6 @@
 # Andrew JRocket
 
-Andrew JRocket is a simple and lightweight testing tool for Java projects. It's a port of Andrew Testing Library for JavaScript.
+O Andrew JRocket é uma ferramenta simples e leve de teste para projetos Java. É um port do Andrew Testing Library para JavaScript.
 
 ![logo](https://cdn1.iconfinder.com/data/icons/space-filled-outline-35/64/Rocket-256.png)
 
