@@ -16,7 +16,7 @@ O Andrew JRocket é uma ferramenta simples e leve de teste para projetos Java. �
 
 [Visite a página do projeto no GitHub](https://github.com/Redwars22/andrew-jrocket)
 
-# CONFIGURANDO E USANDO O JROCKET
+## CONFIGURANDO E USANDO O JROCKET
 
 - Baixe e coloque em qualquer lugar no projeto.
 - Faça a classe na qual você quer executar o JRocket herdar (`extends`) da classe JRocketTesting.
@@ -38,10 +38,10 @@ public class Example extends JRocketTesting {
 }
 ```
 
-# MATCHERS
+## MATCHERS
 Há mais de 20 matchers no JRocket que você pode usar para testes!
 
-## COMPARAÇÃO DE VALORES
+### COMPARAÇÃO DE VALORES
 - `assertEquals(int x, int y)`
 - `assertEquals(float x, floats y)`
 - `assertEquals(double x, double y)`
@@ -58,14 +58,14 @@ Há mais de 20 matchers no JRocket que você pode usar para testes!
 - `assertLessOrEqual(float x, float y)`
 - `assertLessOrEqual(double x, double y)`
 
-## COMPARAÇÃO DE STRINGS DE TEXTO
+### COMPARAÇÃO DE STRINGS DE TEXTO
 - `assertEquals(String x, String y)`
 
-## EXPRESSÕES BOOLEANAS
+### EXPRESSÕES BOOLEANAS
 - `assertTrue(boolean expr)`
 - `assertFalse(boolean expr)`
 
-## VETORES UNIDIMENSIONAIS
+### VETORES UNIDIMENSIONAIS
 - `assertEquals(int [] x, int [] y)`
 - `assertEquals(float [] x, floats [] y)`
 - `assertEquals(double [] x, double [] y)`
