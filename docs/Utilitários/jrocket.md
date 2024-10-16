@@ -7,13 +7,6 @@ O Andrew JRocket é uma ferramenta simples e leve de teste para projetos Java. �
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
 ![Eclipse](https://img.shields.io/badge/Eclipse-2C2255?style=for-the-badge&logo=eclipse&logoColor=white)
 
-- Download and put it somewhere in your project.
-- Make the class you want to run JRocket at extend the JRocketTesting class
-- Run the `begin()` function and pass the name of the test suit as its argument.
-- Add the matchers and run the tests after that function.
-- Finish the test with `end()`.
-- Once the `end()` function is run, a report will be print to the screen with the execution time and the number of passed and failed tests.
-
 [Visite a página do projeto no GitHub](https://github.com/Redwars22/andrew-jrocket)
 
 ## CONFIGURANDO E USANDO O JROCKET
