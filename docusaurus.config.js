@@ -97,7 +97,7 @@ const config = {
           {
             position: 'left',
             label: 'Livros',
-            href: 'https://redwars22.github.io/andrewnationautor/'
+            href: 'https://www.amazon.com.br/stores/Andrew-Nation/author/B0D8L8DXF8'
           },
           {
             href: 'https://github.com/Redwars22',
@@ -127,7 +127,7 @@ const config = {
               },*/
               {
                 label: 'Livros',
-                href: 'https://redwars22.github.io/andrewnationautor/'
+                href: 'https://www.amazon.com.br/stores/Andrew-Nation/author/B0D8L8DXF8'
               },
               {
                 label: 'Entre em contato',
