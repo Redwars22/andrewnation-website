@@ -2,8 +2,8 @@
 
 O Orionboard é um painel de controle empresarial que permite gerenciar a empresa em um só lugar.
 
-![Orionboard1](https://andrewnationdev.vercel.app/img/orionboard/001.png)
-![Orionboard2](https://andrewnationdev.vercel.app/img/orionboard/002.png)
+![Orionboard1](https://andrewnationdev.vercel.app/orionboard/001.png)
+![Orionboard2](https://andrewnationdev.vercel.app/orionboard/002.png)
 
 ## Recursos
 
