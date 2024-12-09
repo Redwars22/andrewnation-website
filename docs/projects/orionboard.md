@@ -2,9 +2,8 @@
 
 O Orionboard é um painel de controle empresarial que permite gerenciar a empresa em um só lugar.
 
-:::warning AVISO!
-Essa aplicação está nas fases finais do desenvolvimento e testes!
-:::
+![Orionboard1](https://andrewnationdev.vercel.app/img/orionboard/001.png)
+![Orionboard2](https://andrewnationdev.vercel.app/img/orionboard/002.png)
 
 ## Recursos
 
@@ -20,7 +19,7 @@ Para acessar o Orionboard, use as seguintes credenciais de login:
 
 ## Plataformas
 
-O Orionboard funciona na web e futuramente terá um aplicativo para Android feito com ReactNative. O Orionboard foi feito com MUI, Sass, TypeScript e React.
+O Orionboard funciona na web e foi feito com MUI, Sass, TypeScript e React.
 
 ## Código-fonte e downloads
 Você pode acessá-lo [aqui](https://oriondashboard.vercel.app/dashboard). Já o repositório pode ser acessado [aqui](https://github.com/Redwars22/orion-dashboard).
