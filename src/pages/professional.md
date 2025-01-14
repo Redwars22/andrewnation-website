@@ -38,7 +38,7 @@
 - Desenvolvimento Android com ReactNative e Expo + TypeScript e testes com Jest.
 - Desenvolvimento web com React e NextJS + TypeScript e testes com Cypress.
 - Estilização com Sass, Tailwind e Bootstrap.
-- Inglês e Espanhol em nível conversacional, além de um conhecimento num nível mais baixo em russo, italiano e francês.
+- Inglês e Espanhol em nível conversacional, além de um conhecimentos em russo, italiano, alemão e francês.
 - LinuxMint, Ubuntu, Fedora e Manjaro.
 - Deploy com Vercel
 - Criação de sites e documentação com Markdown e Docusaurus
