@@ -27,6 +27,10 @@
 
 5- **Linguagem de Programação C# Avançado:** Fundação Bradesco. *Carga Horária 8 horas*
 
+6- **FluêncIA - Inteligência Artificial:** Fundação Bradesco. *Carga Horária 4 horas*
+
+7- **Modelagem de Dados:** Fundação Bradesco. *Carga Horária 8 horas*
+
 [CERTIFICADOS](https://github.com/Redwars22/andrewnation-website/tree/main/certfs)
 
 ## Habilidades e conhecimentos adquiridos (hard-skills):
@@ -47,3 +51,6 @@
 
 ## Estudando no momento
 - Ionic Framework
+- Produtividade com IA
+- Python
+- Desenvolvimento back-end com Node
