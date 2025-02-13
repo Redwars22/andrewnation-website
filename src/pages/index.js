@@ -33,12 +33,13 @@ export default function Home() {
   return (
     <Layout
       title={`Bem-vindo ao multiverso do AndrewNation`}
-      description="Description will go into a meta tag in <head />"
+      description="Um programador front-end com curiosidade infinita, movido pelas ideias e criatividade"
     >
       <HomepageHeader />
       <main>
         <HomepageFeatures />
-        <HomepageShowcase/>
+        <hr />
+        <HomepageShowcase />
       </main>
     </Layout>
   );
