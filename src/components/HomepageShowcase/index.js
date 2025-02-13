@@ -43,7 +43,7 @@ function Project({ Svg, title, description, link }) {
             <div className="text--center padding-horiz--md">
                 <h3>{title}</h3>
                 <p>{description}</p>
-                <a href="`${link}`">Saiba mais</a>
+                <a href="`${base+link}`">Saiba mais</a>
             </div>
         </div>
     );
@@ -61,6 +61,7 @@ export default function HomepageShowcase() {
                         ))}
                     </div>
                 </div>
-            </section></div>
+            </section>
+        </div>
     );
 }
