@@ -51,15 +51,16 @@ function Project({ Svg, title, description, link }) {
 
 export default function HomepageShowcase() {
     return (
-        <section className={styles.features}>
+        <div>
             <h1 className="hero__subtitle text--center">Projetos em Destaque</h1>
-            <div className="container">
-                <div className="row">
-                    {ProjectList.map((props, idx) => (
-                        <Project key={idx} {...props} />
-                    ))}
+            <section className={styles.features}>
+                <div className="container">
+                    <div className="row">
+                        {ProjectList.map((props, idx) => (
+                            <Project key={idx} {...props} />
+                        ))}
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section></div>
     );
 }
