@@ -1,5 +1,9 @@
 # Andrezera
 
+::: warn ATENÇÃO
+Este projeto está marcado como depreciado e não será mais atualizado. Porém, caso queira, você ainda pode usá-lo (se disponível o deploy online) e clonar seu código-fonte.
+:::
+
 Um navegador leve para Android feito com ReactNative usando o react-native-web-view. Ele possui modo escuro, histórico de navegação, modo privado e também você consegue salvar os seus sites favoritos. Sua interface é elegante e minimalista.
 
 ## Recursos

@@ -18,6 +18,7 @@ O Deathnote é um bloco de notas minimalista para Windows escrito para a platafo
 O Deathnote ainda está no processo inicial de desenvolvimento (Release Preview) e, portanto, alguns recursos podem estar faltando e/ou podem não funcionar como esperado. Usar com cautela!
 :::
 
+
 ## Código-fonte e downloads
 
 Você pode obter o código-fonte do Deathnote e baixar sua versão mais recente [clicando aqui](https://github.com/Redwars22/deathnote).

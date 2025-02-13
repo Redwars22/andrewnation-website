@@ -1,5 +1,9 @@
 # AndrewSH
 
+::: warn ATENÇÃO
+Este projeto está marcado como depreciado e não será mais atualizado. Porém, caso queira, você ainda pode usá-lo (se disponível o deploy online) e clonar seu código-fonte.
+:::
+
 O AndrewSH é um pequeno experimento de terminal/shell (não sei se já está no estágio de ser chamado de shell) construído com o Go que te permite executar comandos.
 
 ![andrewsh](https://andrewnationdev.vercel.app/img/terminal.png)
