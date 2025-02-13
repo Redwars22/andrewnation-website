@@ -2,6 +2,8 @@ import React from 'react';
 import clsx from 'clsx';
 import styles from './styles.module.css';
 
+const BASE = "https://andrewnationdev.vercel.app/"
+
 const ProjectList = [
     {
         title: 'Algometer',
@@ -50,10 +52,8 @@ function Project({ Svg, title, description, link }) {
 export default function HomepageShowcase() {
     return (
         <section className={styles.features}>
+            <h1 className="hero__subtitle text--center">Projetos em Destaque</h1>
             <div className="container">
-                <div className="row">
-                    <h1 className="hero__subtitle text--center">Projetos em Destaque</h1>
-                </div>
                 <div className="row">
                     {ProjectList.map((props, idx) => (
                         <Project key={idx} {...props} />
