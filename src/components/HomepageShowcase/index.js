@@ -2,7 +2,7 @@ import React from 'react';
 import clsx from 'clsx';
 import styles from './styles.module.css';
 
-const BASE = "https://andrewnationdev.vercel.app/"
+const BASE = "https://andrewnationdev.vercel.app"
 
 const ProjectList = [
     {
@@ -43,7 +43,14 @@ function Project({ Svg, title, description, link }) {
             <div className="text--center padding-horiz--md">
                 <h3>{title}</h3>
                 <p>{description}</p>
-                <a href="`${base+link}`">Saiba mais</a>
+                <div className={styles.buttons}>
+                    <Link
+                        className="button button--secondary button--lg"
+                        to={link}
+                    >
+                        Saiba mais
+                    </Link>
+                </div>
             </div>
         </div>
     );
