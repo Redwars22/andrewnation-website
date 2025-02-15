@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import styles from './styles.module.css';
@@ -93,13 +93,31 @@ export default function HomepageShowcase() {
         shuffle(ProjectList);
     },[])*/
 
+    const [projects, setProjects] = useState([]);
+
+    useEffect(()=>{
+        
+            const newList = [];
+
+            while(newList.length < 3){
+                let i = Math.floor(Math.random() * ProjectList.length);
+                let j = 0;
+
+                if(newList[j]?.title != ProjectList[j]?.title){
+                    setProjects([...projects, ProjectList[j]]);
+                    j++
+                }
+            }
+        
+    },[])
+
     return (
         <div>
             <h1 className="hero__subtitle text--center">Projetos em Destaque</h1>
             <section className={styles.features}>
                 <div className="container">
                     <div className="row">
-                        {ProjectList.map((props, idx) => (
+                        {projects.map((props, idx) => (
                             <Project key={idx} {...props} />
                         ))}
                     </div>
