@@ -36,6 +36,36 @@ const ProjectList = [
             </>
         ),
         link: "/docs/projects/fahrkelvin"
+    },
+    {
+        title: 'Andrew Testing Library',
+        Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+        description: (
+            <>
+                O Andrew Testing Library é uma ferramenta de teste para TypeScript e JavaScript. Ela é bem mais simples que ferramentas mais parrudas como o Jest, por exemplo, mas para testes simples deve cumprir bem seu objetivo.
+            </>
+        ),
+        link: "/docs/Utilitários/andrewtestinglibrary"
+    },
+    {
+        title: 'Andrew JRocket',
+        Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+        description: (
+            <>
+                O Andrew JRocket é uma ferramenta simples e leve de teste para projetos Java. É um port do Andrew Testing Library para JavaScript.
+            </>
+        ),
+        link: "/docs/Utilitários/jrocket"
+    },
+    {
+        title: 'ClimaSevero',
+        Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+        description: (
+            <>
+                O ClimaSevero é um programa de previsão do tempo que usa a API do OpenWeatherMap para lhe trazer informações sobre o clima em virtualmente qualquer cidade do mundo.
+            </>
+        ),
+        link: "/docs/projects/climasevero"
     }
 ];
 
