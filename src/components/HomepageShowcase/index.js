@@ -89,9 +89,9 @@ function Project({ Svg, title, description, link }) {
 }
 
 export default function HomepageShowcase() {
-    useEffect(()=>{
+    /*useEffect(()=>{
         shuffle(ProjectList);
-    },[])
+    },[])*/
 
     return (
         <div>
