@@ -95,21 +95,20 @@ export default function HomepageShowcase() {
 
     const [projects, setProjects] = useState([]);
 
-    useEffect(()=>{
-        
-            const newList = [];
-
-            while(newList.length < 3){
-                let i = Math.floor(Math.random() * ProjectList.length);
-                let j = 0;
-
-                if(newList[j]?.title != ProjectList[j]?.title){
-                    setProjects([...projects, ProjectList[j]]);
-                    j++
-                }
+    useEffect(() => {
+        const newList = [];
+        while (newList.length < 3 && newList.length < ProjectList.length) {
+            let i = Math.floor(Math.random() * ProjectList.length);
+            let selectedProject = ProjectList[i];
+    
+            if (!newList.some(proj => proj.title === selectedProject.title)) {
+                newList.push(selectedProject);
             }
-        
-    },[])
+        }
+    
+        setProjects(newList);
+    }, []);
+    
 
     return (
         <div>
