@@ -2,6 +2,7 @@ import React from 'react';
 import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import styles from './styles.module.css';
+import {shuffle} from '../../utils/vampirjs'
 
 const BASE = "https://andrewnationdev.vercel.app"
 
@@ -58,6 +59,10 @@ function Project({ Svg, title, description, link }) {
 }
 
 export default function HomepageShowcase() {
+    useEffect(()=>{
+        shuffle(ProjectList);
+    },[])
+
     return (
         <div>
             <h1 className="hero__subtitle text--center">Projetos em Destaque</h1>
