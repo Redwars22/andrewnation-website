@@ -66,6 +66,36 @@ const ProjectList = [
             </>
         ),
         link: "/docs/projects/climasevero"
+    },
+    {
+        title: 'Andrew Testing Library (for Python)',
+        Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+        description: (
+            <>
+               O Andrew Testing Library para Python é uma ferramenta de teste, análoga ao Andrew Testing Library que é um outro projeto meu feito para testes em TS/JS. Ela é bem mais simples que ferramentas mais parrudas, mas para testes simples deve cumprir bem seu objetivo. 
+            </>
+        ),
+        link: "/docs/Utilitários/andrewtestlibpy"
+    },
+    {
+        title: 'Orionboard',
+        Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+        description: (
+            <>
+                O Orionboard é um painel de controle empresarial que permite gerenciar a empresa em um só lugar.
+            </>
+        ),
+        link: "/docs/projects/orionboard"
+    },
+    {
+        title: 'Palácio da Gula',
+        Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+        description: (
+            <>
+                É o sistema online de pedidos de uma hamburgueria. Ele possui o fluxo completo, desde a escolha do hambúrguer, dos acompanhamentos, pagamento e endereço de entrega.
+            </>
+        ),
+        link: "/docs/projects/palacio-da-gula"
     }
 ];
 
