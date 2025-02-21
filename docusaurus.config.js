@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'AndrewNation',
   tagline: 'Um programador front-end com curiosidade infinita, movido pelas ideias e criatividade',
-  favicon: 'img/favicon.ico',
+  favicon: 'https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/84_Dev_logo_logos-256.png',
 
   // Set the production url of your site here
   url: 'https://andrewnationdev.vercel.app',
@@ -55,12 +55,12 @@ const config = {
     ({
       // Replace with your project's social card
       image:
-        'https://cdn3.iconfinder.com/data/icons/macosxstyle/macosxstyle_png/128/Xcode.png',
+        'https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/84_Dev_logo_logos-256.png',
       navbar: {
         title: 'AndrewNation',
         logo: {
-          alt: 'My Site Logo',
-          src: 'https://cdn3.iconfinder.com/data/icons/macosxstyle/macosxstyle_png/128/Xcode.png',
+          alt: 'AndrewNation Logo',
+          src: 'https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/84_Dev_logo_logos-256.png',
         },
         items: [
           {
