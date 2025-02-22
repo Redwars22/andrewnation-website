@@ -9,7 +9,7 @@ const FeatureList = [
     description: (
       <>
         Se tem uma coisa que eu gosto muito é criar e inventar: criar aplicativos,
-        escrever histórias, documentar, planejar, desenhar interfaces, pôsteres, etc.
+        escrever histórias, documentar, planejar, desenhar interfaces, etc.
       </>
     ),
   },
@@ -18,13 +18,13 @@ const FeatureList = [
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Vários tópicos me chamam a atenção, como astronomia, ciência, tecnologia, linguística, ficção, etc. 
-        Mas nunca e canso de ir atrás do conhecimento, preciso sempre de mais e mais!
+        Vários tópicos me chamam a atenção, como astronomia, ciência, tecnologia, linguística, ficção, psicologia, etc. 
+        Você verá um pouco disso neste site ou no meu site secundário.
       </>
     ),
   },
   {
-    title: 'Pronto para ir além',
+    title: 'Desejo de ir além',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
