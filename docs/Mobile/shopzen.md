@@ -1,4 +1,4 @@
-# Shopze
+# Shopzen
 
 O Shopzen é o modelo de aplicativo de loja simples feito em ReactNative + JS com interface Material UI, tela de login (local e offline até o momento), carrinho de compras e tela de descrição do produto com exibição de comentários, seletor de tamanho/cor e etc.
 
