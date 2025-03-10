@@ -46,11 +46,13 @@
 - Desenvolvimento desktop com VB.NET e C# (WindowsForms e Visual Studio 2022)
 - Desenvolvimento de apps web com Svelte + TypeScript
 - Desenvolvimento de apps Desktop Windows e Linux com Lazarus e Pascal
-- Consumo de APIs em aplicações JavaScript/TypeScript em React/ReactNative com o intermédio do ReactQuery
+- Consumo de APIs em aplicações JavaScript/TypeScript em React/ReactNative com o intermédio do ReactQuery e Axios
 - Aplicativos desktop multiplataforma com C#, Mono e GTK.
+- Criação de sites e blogs com o Astro Blog
 
 ## Estudando no momento
 - Ionic Framework
 - Produtividade com IA
 - Python
 - Desenvolvimento back-end com Node
+- Desenvolvimento com VueJS
