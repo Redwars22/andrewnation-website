@@ -4,8 +4,8 @@
 
 Um tema elegante e profissional para páginas "Em Breve" com contagem regressiva, desenvolvido com Vue 3, TypeScript e Bootstrap 5. Nas cores preto e vermelho.
 
-[VER UMA DEMO]()
-[COMPRAR O TEMA]()
+[VER UMA DEMO](https://abc.com)
+[COMPRAR O TEMA](https://abc.com)
 
 ## ✨ Características
 
