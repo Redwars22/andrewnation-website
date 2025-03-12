@@ -1,6 +1,6 @@
 # Coming Soon - Tema Red Black
 
-![Coming Soon tema RB](https://andrewnationdev.vercel.app/img/coming-soon-red-black-theme.png)
+![Coming Soon tema RB](https://andrewnationdev.vercel.app/img/coming-soon-red-black.png)
 
 Um tema elegante e profissional para páginas "Em Breve" com contagem regressiva, desenvolvido com Vue 3, TypeScript e Bootstrap 5. Nas cores preto e vermelho.
 
