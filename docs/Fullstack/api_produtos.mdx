@@ -1,0 +1,31 @@
+# 🛒 API de Produtos
+
+Uma API RESTful simples para cadastro, listagem e consulta de produtos, desenvolvida com Node.js, Express e MySQL. Ela em breve será usada em um projeto fullstack que desenvolverei.
+
+## 🚀 Tecnologias
+
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![Express](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-00758F?style=for-the-badge&logo=mysql&logoColor=white)
+![dotenv](https://img.shields.io/badge/dotenv-ECD53F?style=for-the-badge&logo=dotenv&logoColor=black)
+
+REPOSITÓRIO(EM BREVE)
+
+## 📦 Endpoints
+
+### `GET /produtos`
+Retorna todos os produtos cadastrados.
+
+### `GET /produtos/:id`
+Retorna os dados de um produto específico pelo ID.
+
+### `POST /produtos`
+Cria um novo produto.  
+**Body esperado (JSON):**
+```json
+{
+  "nome": "Exemplo",
+  "descricao": "Produto de exemplo",
+  "quantidade": 10,
+  "valor_unitario": 19.99
+}
