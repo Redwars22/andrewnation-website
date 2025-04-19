@@ -1,4 +1,4 @@
-# SGF (Sistema de Gerenciamento de Funcionários - Django)
+# 👷 SGF (Sistema de Gerenciamento de Funcionários - Django)
 
 Este é um projeto de sistema de cadastro de funcionários (CRUD) feito com Django + Python (backend), Bootstrap (front-end) e MySQL (SGBD).
 
@@ -17,7 +17,9 @@ Funcionalidades:
 ## ℹ Como configurar
 
 1-Crie um environment Python
+
 2-Instale o Django e demais dependências
+
 3-Execute `python manage.py runserver`
 
 ## 🗄 Banco de Dados
