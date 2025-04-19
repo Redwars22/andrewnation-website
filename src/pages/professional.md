@@ -38,21 +38,19 @@
 - Desenvolvimento Android com ReactNative e Expo + TypeScript e testes com Jest.
 - Desenvolvimento web com React e NextJS + TypeScript e testes com Cypress.
 - Estilização com Sass, Tailwind e Bootstrap.
-- Inglês e Espanhol em nível conversacional, além de um conhecimentos em russo, italiano, alemão e francês.
-- LinuxMint, Ubuntu, Fedora e Manjaro.
+- Inglês e Espanhol em nível conversacional, além de conhecimentos em russo, italiano, alemão e francês.
+- Distros Linux
 - Deploy com Vercel
 - Criação de sites e documentação com Markdown e Docusaurus
 - Criação e publicação de bibliotecas NPM
-- Desenvolvimento desktop com VB.NET e C# (WindowsForms e Visual Studio 2022)
-- Desenvolvimento de apps web com Svelte + TypeScript
-- Desenvolvimento de apps Desktop Windows e Linux com Lazarus e Pascal
+- Desenvolvimento desktop com VB.NET e C# (WindowsForms, MonoDevelop e Visual Studio 2022)
 - Consumo de APIs em aplicações JavaScript/TypeScript em React/ReactNative com o intermédio do ReactQuery e Axios
-- Aplicativos desktop multiplataforma com C#, Mono e GTK.
 - Criação de sites e blogs com o Astro Blog
+- GoogleCollab e Python com NumPy e Pandas
+- Criação de APIs com ExpressJS
+- Banco de Dados MySQL
 
 ## Estudando no momento
-- Ionic Framework
+
 - Produtividade com IA
-- Python
-- Desenvolvimento back-end com Node
-- Desenvolvimento com VueJS
+- Administração de Bancos de Dados
