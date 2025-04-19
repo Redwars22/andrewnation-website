@@ -2,6 +2,8 @@
 
 Este é um projeto de sistema de cadastro de funcionários (CRUD) feito com Django + Python (backend), Bootstrap (front-end) e MySQL (SGBD).
 
+![Imagem do SGF - Tela de Cadastro](https://andrewnationdev.vercel.app/sgf_crud.png)
+
 Funcionalidades:
 - Cadastrar funcionários
 - Listar funcionários
