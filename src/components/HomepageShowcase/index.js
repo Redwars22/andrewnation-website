@@ -96,8 +96,39 @@ const ProjectList = [
             </>
         ),
         link: "/docs/projects/palacio-da-gula"
+    },
+    {
+        title: 'API de Produtos',
+        Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+        description: (
+            <>
+                Uma API RESTful simples para cadastro, listagem e consulta de produtos, desenvolvida com Node.js, Express e MySQL. Ela em breve será usada em um projeto fullstack que desenvolverei.
+            </>
+        )
+    },
+    {
+        title: 'SGF (Sistema de Gerenciamento de Funcionários - Django)',
+        Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+        description: (
+            <>
+                Este é um projeto de sistema de cadastro de funcionários (CRUD) feito com Django + Python (backend), Bootstrap (front-end) e MySQL (SGBD).
+            </>
+        )
     }
 ];
+
+/**
+ * 
+ * {
+        title: '',
+        Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+        description: (
+            <>
+                
+            </>
+        )
+    }
+ */
 
 function Project({ Svg, title, description, link }) {
     return (
