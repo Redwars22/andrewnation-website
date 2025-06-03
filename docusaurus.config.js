@@ -85,20 +85,15 @@ const config = {
             to: 'blog',
           },
           {
-            position: "left",
-            label: 'Linguística',
-            to: 'blog/tags/linguistica'
-          },
-          {
             position: 'left',
             label: 'Loja',
             href: 'https://www.buymeacoffee.com/andrewnation/extras'
           },
           {
-            position: 'left',
-            label: 'Livros',
-            href: 'https://www.amazon.com.br/stores/Andrew-Nation/author/B0D8L8DXF8'
-          },
+            position: "left",
+            label: 'AndrewDeviant',
+            href: 'https://andrewdeviant.vercel.app/'
+          }
           {
             href: 'https://github.com/Redwars22',
             label: 'GitHub',
