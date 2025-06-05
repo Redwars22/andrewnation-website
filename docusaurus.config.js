@@ -93,7 +93,7 @@ const config = {
             position: "left",
             label: 'AndrewDeviant',
             href: 'https://andrewdeviant.vercel.app/'
-          }
+          },
           {
             href: 'https://github.com/Redwars22',
             label: 'GitHub',
