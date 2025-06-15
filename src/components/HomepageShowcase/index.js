@@ -9,7 +9,6 @@ const BASE = "https://andrewnationdev.vercel.app"
 const ProjectList = [
     {
         title: 'Algometer',
-        Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
         description: (
             <>
                 O Algometer é uma ferramenta de linha de comando feita com Node para medir o tempo de execução de algoritmos JavaScript/TypeScript.
@@ -19,7 +18,6 @@ const ProjectList = [
     },
     {
         title: 'Drewmax',
-        Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
         description: (
             <>
                 O Drewmax é um protótipo de um serviço de streaming inspirado pela Netflix e pelo HBO usando a API do The Movie Database.
@@ -29,7 +27,6 @@ const ProjectList = [
     },
     {
         title: 'Fahrkelvin',
-        Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
         description: (
             <>
                 Biblioteca para converter escalas de temperatura Kelvin, Celsius e Fahrenheit que você pode incluir em seus projetos. Ela é leve e fácil de usar.
@@ -39,7 +36,6 @@ const ProjectList = [
     },
     {
         title: 'Andrew Testing Library',
-        Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
         description: (
             <>
                 O Andrew Testing Library é uma ferramenta de teste para TypeScript e JavaScript. Ela é bem mais simples que ferramentas mais parrudas como o Jest, por exemplo, mas para testes simples deve cumprir bem seu objetivo.
@@ -49,7 +45,6 @@ const ProjectList = [
     },
     {
         title: 'Andrew JRocket',
-        Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
         description: (
             <>
                 O Andrew JRocket é uma ferramenta simples e leve de teste para projetos Java. É um port do Andrew Testing Library para JavaScript.
@@ -59,7 +54,6 @@ const ProjectList = [
     },
     {
         title: 'ClimaSevero',
-        Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
         description: (
             <>
                 O ClimaSevero é um programa de previsão do tempo que usa a API do OpenWeatherMap para lhe trazer informações sobre o clima em virtualmente qualquer cidade do mundo.
@@ -69,7 +63,6 @@ const ProjectList = [
     },
     {
         title: 'Andrew Testing Library (for Python)',
-        Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
         description: (
             <>
                O Andrew Testing Library para Python é uma ferramenta de teste, análoga ao Andrew Testing Library que é um outro projeto meu feito para testes em TS/JS. Ela é bem mais simples que ferramentas mais parrudas, mas para testes simples deve cumprir bem seu objetivo. 
@@ -79,7 +72,6 @@ const ProjectList = [
     },
     {
         title: 'Orionboard',
-        Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
         description: (
             <>
                 O Orionboard é um painel de controle empresarial que permite gerenciar a empresa em um só lugar.
@@ -89,7 +81,6 @@ const ProjectList = [
     },
     {
         title: 'Palácio da Gula',
-        Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
         description: (
             <>
                 É o sistema online de pedidos de uma hamburgueria. Ele possui o fluxo completo, desde a escolha do hambúrguer, dos acompanhamentos, pagamento e endereço de entrega.
@@ -99,7 +90,6 @@ const ProjectList = [
     },
     {
         title: 'API de Produtos',
-        Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
         description: (
             <>
                 Uma API RESTful simples para cadastro, listagem e consulta de produtos, desenvolvida com Node.js, Express e MySQL. Ela em breve será usada em um projeto fullstack que desenvolverei.
@@ -108,7 +98,6 @@ const ProjectList = [
     },
     {
         title: 'SGF (Sistema de Gerenciamento de Funcionários - Django)',
-        Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
         description: (
             <>
                 Este é um projeto de sistema de cadastro de funcionários (CRUD) feito com Django + Python (backend), Bootstrap (front-end) e MySQL (SGBD).
@@ -121,7 +110,7 @@ const ProjectList = [
  * 
  * {
         title: '',
-        Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+        Svg: require('@site/static/icon/apps.png').default,
         description: (
             <>
                 
@@ -130,10 +119,11 @@ const ProjectList = [
     }
  */
 
-function Project({ Svg, title, description, link }) {
+function Project({ title, description, link }) {
     return (
         <div className={clsx('col col--4')}>
             <div className="text--center padding-horiz--md">
+                <img src="/static/icons/apps.png"></img>
                 <h3>{title}</h3>
                 <p>{description}</p>
                 <div className={styles.buttons}>
