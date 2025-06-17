@@ -94,13 +94,34 @@ const ProjectList = [
             <>
                 Uma API RESTful simples para cadastro, listagem e consulta de produtos, desenvolvida com Node.js, Express e MySQL. Ela em breve será usada em um projeto fullstack que desenvolverei.
             </>
-        )
+        ),
+        link: "/docs/Fullstack/api_produtos"
     },
     {
         title: 'SGF (Sistema de Gerenciamento de Funcionários - Django)',
         description: (
             <>
                 Este é um projeto de sistema de cadastro de funcionários (CRUD) feito com Django + Python (backend), Bootstrap (front-end) e MySQL (SGBD).
+            </>
+        ),
+        link: "/docs/Fullstack/crud_funcionarios"
+    },
+    {
+        title: 'DrewNote',
+        description: (
+            <>
+                DrewNote é um aplicativo de anotações minimalista, rápido e seguro, feito por AndrewNation.
+                Suas notas são salvas localmente no seu navegador, com proteção por senha e Markdown.
+                Você pode exportar e importar seu conteúdo em JSON para manter um backup.
+            </>
+        ),
+        link: "/docs/projects/drewnote"
+    },
+    {
+        title: 'Arusian Academy',
+        description: (
+            <>
+                Arusian Academy é um website onde você pode encontrar recursos para aprender a língua aru.
             </>
         )
     }
