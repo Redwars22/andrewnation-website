@@ -55,12 +55,12 @@ const config = {
     ({
       // Replace with your project's social card
       image:
-        'https://www.andrewnationdev.vercel.app/static/website_icon.png',
+        'https://andrewnationdev.vercel.app/static/website_icon.png',
       navbar: {
         title: 'AndrewNation',
         logo: {
           alt: 'AndrewNation Logo',
-          src: 'https://www.andrewnationdev.vercel.app/static/website_icon.png',
+          src: 'https://andrewnationdev.vercel.app/static/website_icon.png',
         },
         items: [
           {
