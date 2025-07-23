@@ -144,7 +144,7 @@ function Project({ title, description, link }) {
     return (
         <div className={clsx('col col--4')}>
             <div className="text--center padding-horiz--md">
-                <img width="120px" src="https://andrewnationdev.vercel.app/icons/apps.png"></img>
+                <img width="120px" src="https://andrewnationdev.vercel.app/icons/app.png"></img>
                 <h3>{title}</h3>
                 <p>{description}</p>
                 <div className={styles.buttons}>

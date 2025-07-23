@@ -55,12 +55,12 @@ const config = {
     ({
       // Replace with your project's social card
       image:
-        'https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/84_Dev_logo_logos-256.png',
+        'https://www.andrewnationdev.vercel.app/static/website_icon.png',
       navbar: {
         title: 'AndrewNation',
         logo: {
           alt: 'AndrewNation Logo',
-          src: 'https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/84_Dev_logo_logos-256.png',
+          src: 'https://www.andrewnationdev.vercel.app/static/website_icon.png',
         },
         items: [
           {
@@ -120,10 +120,10 @@ const config = {
                 label: 'WattPad',
                 href: 'https://www.wattpad.com/user/andrewnation69',
               },*/
-              {
+              /*{
                 label: 'Livros',
                 href: 'https://www.amazon.com.br/stores/Andrew-Nation/author/B0D8L8DXF8'
-              },
+              },*/
               {
                 label: 'Entre em contato',
                 href: 'mailto:andrewnationdev@gmail.com',
