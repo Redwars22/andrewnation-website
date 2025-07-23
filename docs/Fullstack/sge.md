@@ -1,4 +1,4 @@
-# Sistema de Gestão Empresarial (SGE) - EM BREVE!!!
+# 📊 Sistema de Gestão Empresarial (SGE) - EM BREVE!!!
 
 ## Visão Geral
 O Sistema de Gestão Empresarial (SGE) é uma solução robusta e intuitiva projetada para otimizar a organização e a produtividade da sua equipe. Com módulos essenciais para a gestão de pessoas e tarefas, o SGE oferece uma plataforma centralizada para acompanhar o fluxo de trabalho e ter uma visão clara das operações.
