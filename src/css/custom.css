@@ -6,25 +6,27 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  /* Primary color inspired by common IDE themes (e.g., VS Code blue) */
+  --ifm-color-primary: #007ACC;
+  --ifm-color-primary-dark: #006BB3;
+  --ifm-color-primary-darker: #00609E;
+  --ifm-color-primary-darkest: #004F82;
+  --ifm-color-primary-light: #008CE5;
+  --ifm-color-primary-lighter: #009BEF;
+  --ifm-color-primary-lightest: #00ADFF;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
+  /* Primary color for dark mode, often a vibrant tech-blue/cyan */
+  --ifm-color-primary: #61DAFB; /* React blue, often used in syntax highlighting */
+  --ifm-color-primary-dark: #4DC7E8;
+  --ifm-color-primary-darker: #3AB3D5;
+  --ifm-color-primary-darkest: #289FC2;
+  --ifm-color-primary-light: #75E7FF;
+  --ifm-color-primary-lighter: #89F0FF;
+  --ifm-color-primary-lightest: #9CF8FF;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
