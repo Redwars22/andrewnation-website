@@ -5,7 +5,6 @@ Lingobase é uma plataforma completa para criar, documentar e compartilhar <stro
 ## Demonstração e Código-Fonte
 
 ![Tela de Login](https://andrewnationdev.vercel.app/img/lingobase/lingobase1.png)
-]
 ![Tela de Login](https://andrewnationdev.vercel.app/img/lingobase/lingobase2.png)
 ![Tela de Login](https://andrewnationdev.vercel.app/img/lingobase/lingobase3.png)
 
