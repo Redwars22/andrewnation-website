@@ -5,6 +5,8 @@ O Sistema de Gestão Empresarial (SGE) é uma solução robusta e intuitiva proj
 
 [Teste o Protótipo Aqui](https://sge-sistema-ger-empresarial.vercel.app/login)
 
+Gostou do modelo? Entre em contato no email **andrewnationdev@gmail.com** para realizar um orçamento e obter acesso ao repositório privado no GitHub onde publicarei novas atualizações do modelo periodicamente,
+
 ## Protótipos de Interface
 
 ![Tela de Login](https://andrewnationdev.vercel.app/img/sge/sge-prototipo1.png)
@@ -14,7 +16,7 @@ O Sistema de Gestão Empresarial (SGE) é uma solução robusta e intuitiva proj
 ![Relatórios](https://andrewnationdev.vercel.app/img/sge/sge-prototipo5.png)
 
 ## Funcionalidades Principais
-1. Gestão de Funcionários
+**1. Gestão de Funcionários**
 Gerencie sua equipe de forma eficiente com recursos completos para:
 
 - Cadastro e Detalhes: Adicione novos funcionários com informações detalhadas (nome, sobrenome, cargo, departamento, contato, data de contratação).
@@ -25,7 +27,7 @@ Gerencie sua equipe de forma eficiente com recursos completos para:
 
 - Ativação/Desativação: Controle o status de atividade dos funcionários, permitindo a desativação sem a exclusão permanente dos registros.
 
-2. Gestão de Tarefas (Kanban)
+**2. Gestão de Tarefas (Kanban)**
 Organize e acompanhe as atividades da sua empresa com um quadro Kanban dinâmico:
 
 - Criação de Tarefas: Defina títulos, descrições, status, prioridade e datas de vencimento para cada tarefa.
@@ -36,7 +38,7 @@ Organize e acompanhe as atividades da sua empresa com um quadro Kanban dinâmico
 
 - Atualização e Exclusão: Mantenha as informações das tarefas sempre atualizadas e remova itens conforme necessário.
 
-3. Relatórios e Análises (Visão Global)
+**3. Relatórios e Análises (Visão Global)**
 Obtenha insights valiosos sobre o desempenho da sua operação:
 
 - Estatísticas de Equipe: Visualize o número total de funcionários, quantos estão ativos e inativos.
@@ -49,7 +51,7 @@ Obtenha insights valiosos sobre o desempenho da sua operação:
 
 - Produtividade Mensal: Acompanhe o número de tarefas concluídas no mês atual.
 
-4. Autenticação e Segurança
+**4. Autenticação e Segurança**
 O sistema garante o acesso seguro através de um sistema de autenticação robusto, protegendo seus dados e garantindo que apenas usuários autorizados possam acessar as informações.
 
 ## Benefícios para Sua Empresa
