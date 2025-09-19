@@ -1,8 +1,8 @@
-import React, {useEffect, useState} from 'react';
+import React, { useEffect, useState } from 'react';
 import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import styles from './styles.module.css';
-import {shuffle} from '../../utils/vampirjs'
+import { shuffle } from '../../utils/vampirjs'
 
 const BASE = "https://andrewnationdev.vercel.app"
 
@@ -65,7 +65,7 @@ const ProjectList = [
         title: 'Andrew Testing Library (for Python)',
         description: (
             <>
-               O Andrew Testing Library para Python é uma ferramenta de teste, análoga ao Andrew Testing Library que é um outro projeto meu feito para testes em TS/JS. Ela é bem mais simples que ferramentas mais parrudas, mas para testes simples deve cumprir bem seu objetivo. 
+                O Andrew Testing Library para Python é uma ferramenta de teste, análoga ao Andrew Testing Library que é um outro projeto meu feito para testes em TS/JS. Ela é bem mais simples que ferramentas mais parrudas, mas para testes simples deve cumprir bem seu objetivo.
             </>
         ),
         link: "/docs/Utilitários/andrewtestlibpy"
@@ -124,6 +124,22 @@ const ProjectList = [
                 Arusian Academy é um website onde você pode encontrar recursos para aprender a língua aru.
             </>
         )
+    },
+    {
+        title: 'Andrew Lingobase',
+        description: (
+            <>
+                O Lingobase é uma plataforma para criar e compartilhar línguas construídas (conlangs) com propósitos artísticos, de comunicação ou pesquisa. Convida a comunidade a colaborar no desenvolvimento do projeto de código aberto.
+            </>
+        )
+    },
+    {
+        title: 'Sistema de Gestão Empresarial (SGE)',
+        description: (
+            <>
+                O SGE é uma solução robusta e intuitiva que otimiza a organização e produtividade da equipe, com módulos essenciais para gestão de pessoas e tarefas em uma plataforma centralizada.
+            </>
+        )
     }
 ];
 
@@ -172,15 +188,15 @@ export default function HomepageShowcase() {
         while (newList.length < 3 && newList.length < ProjectList.length) {
             let i = Math.floor(Math.random() * ProjectList.length);
             let selectedProject = ProjectList[i];
-    
+
             if (!newList.some(proj => proj.title === selectedProject.title)) {
                 newList.push(selectedProject);
             }
         }
-    
+
         setProjects(newList);
     }, []);
-    
+
 
     return (
         <div>
