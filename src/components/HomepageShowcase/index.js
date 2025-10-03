@@ -71,24 +71,6 @@ const ProjectList = [
         link: "/docs/Utilitários/andrewtestlibpy"
     },
     {
-        title: 'Orionboard',
-        description: (
-            <>
-                O Orionboard é um painel de controle empresarial que permite gerenciar a empresa em um só lugar.
-            </>
-        ),
-        link: "/docs/projects/orionboard"
-    },
-    {
-        title: 'Palácio da Gula',
-        description: (
-            <>
-                É o sistema online de pedidos de uma hamburgueria. Ele possui o fluxo completo, desde a escolha do hambúrguer, dos acompanhamentos, pagamento e endereço de entrega.
-            </>
-        ),
-        link: "/docs/projects/palacio-da-gula"
-    },
-    {
         title: 'API de Produtos',
         description: (
             <>
@@ -96,15 +78,6 @@ const ProjectList = [
             </>
         ),
         link: "/docs/Fullstack/api_produtos"
-    },
-    {
-        title: 'SGF (Sistema de Gerenciamento de Funcionários - Django)',
-        description: (
-            <>
-                Este é um projeto de sistema de cadastro de funcionários (CRUD) feito com Django + Python (backend), Bootstrap (front-end) e MySQL (SGBD).
-            </>
-        ),
-        link: "/docs/Fullstack/crud_funcionarios"
     },
     {
         title: 'DrewNote',
