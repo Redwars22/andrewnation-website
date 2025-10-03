@@ -8,8 +8,8 @@ const FeatureList = [
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Se tem uma coisa que eu gosto muito é criar e inventar: criar aplicativos,
-        escrever histórias, documentar, planejar, desenhar interfaces, etc.
+        Minha principal forma de aproveitar o tempo é criando aplicativos,
+        escrevendo histórias, estudando idiomas; documentando, planejando, desenhando interfaces, etc.
       </>
     ),
   },
@@ -29,7 +29,7 @@ const FeatureList = [
     description: (
       <>
         Estou sempre à procura de novas oportunidades e de adquirir novos conhecimentos, 
-        seja na área do desenvolvimento web ou mobile, seja em alguma outra área que acabe 
+        seja na área de programação e tecnologia, seja em alguma outra área que acabe 
         me chamando a atenção futuramente.
       </>
     ),

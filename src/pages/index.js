@@ -20,8 +20,14 @@ function HomepageHeader() {
             className="button button--secondary button--lg"
             to="/docs/intro"
           >
-            Descubra os meus projetos
+            Conheça os meus projetos
           </Link>
+          <a
+            className="button button--secondary button--lg"
+            href="https://www.amazon.com.br/stores/author/B0D8L8DXF8/allbooks"
+          >
+            Meus livros e contos
+          </a>
         </div>
       </div>
     </header>
@@ -33,7 +39,7 @@ export default function Home() {
   return (
     <Layout
       title={`Bem-vindo ao multiverso do AndrewNation`}
-      description="Um programador front-end com curiosidade infinita, movido pelas ideias e criatividade"
+      description="Um programador, escritor, poliglota e ''linguista por hobby'' com curiosidade infinita, movido pelas ideias e criatividade"
     >
       <HomepageHeader />
       <main>

@@ -52,5 +52,5 @@
 
 ## Estudando no momento
 
-- Produtividade com IA
-- Administração de Bancos de Dados
+- Desenvolvimento Android com Kotlin e Android Studio
+- Uso de Python para testes com Selenium

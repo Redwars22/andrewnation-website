@@ -95,6 +95,11 @@ const config = {
             href: 'https://andrewdeviant.vercel.app/'
           },
           {
+            position: "left",
+            label: "Livros",
+            href: 'https://www.amazon.com.br/stores/author/B0D8L8DXF8/allbooks'
+          },
+          {
             href: 'https://github.com/Redwars22',
             label: 'GitHub',
             position: 'right',
