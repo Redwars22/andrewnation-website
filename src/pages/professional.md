@@ -38,7 +38,7 @@
 - Desenvolvimento Android com ReactNative e Expo + TypeScript e testes com Jest.
 - Desenvolvimento web com React e NextJS + TypeScript e testes com Cypress.
 - Estilização com Sass, Tailwind e Bootstrap.
-- Inglês e Espanhol em nível conversacional, além de conhecimentos em russo, italiano, alemão e francês.
+- Inglês e Espanhol em nível conversacional, além de conhecimentos em russo, italiano, alemão, árabe e francês.
 - Distros Linux
 - Deploy com Vercel
 - Criação de sites e documentação com Markdown e Docusaurus
@@ -49,8 +49,10 @@
 - GoogleCollab e Python com NumPy e Pandas
 - Criação de APIs com ExpressJS
 - Banco de Dados MySQL
+- Serviços de abstração de APIs e Banco de Dados como o Supabase (com gerenciamento de autenticação)
 
 ## Estudando no momento
 
 - Desenvolvimento Android com Kotlin e Android Studio
 - Uso de Python para testes com Selenium
+- Supabase e NextJS
