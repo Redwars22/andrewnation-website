@@ -81,17 +81,12 @@ const config = {
           },
           {
             position: 'left',
-            label: 'Blog',
-            to: 'blog',
-          },
-          {
-            position: 'left',
-            label: 'Loja',
-            href: 'https://www.buymeacoffee.com/andrewnation/extras'
+            label: 'Patreon',
+            href: 'https://patreon.com/andrewnationdev?utm_medium=unknown&utm_source=join_link&utm_campaign=creatorshare_creator&utm_content=copyLink'
           },
           {
             position: "left",
-            label: 'AndrewDeviant',
+            label: 'Blog',
             href: 'https://andrewdeviant.vercel.app/'
           },
           {
