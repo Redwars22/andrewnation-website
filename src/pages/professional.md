@@ -13,7 +13,7 @@
 ## Trajetória Acadêmica
 **🎓 Bacharelado em Engenharia de Software - Universidade Estadual de Ponta Grossa**
 
-> Atualmente cursando o terceiro ano no Currículo 3.
+> Atualmente cursando o quarto ano no Currículo 3. Previsão de Formatura: Dezembro de 2026.
 
 ## Cursos Complementares
 
