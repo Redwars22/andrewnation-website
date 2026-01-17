@@ -13,12 +13,12 @@ Futuramente, pretendo implementar outras melhorias neste projeto, tais como: a p
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
 
-# BIBLIOTECAS ADICIONAIS
+## BIBLIOTECAS ADICIONAIS
 - Tailwind Animated para animações.
 - Recharts para o gráfico elegante de temperatura.
 - OpenWeatherMap para a obtenção dos dados do clima.
 
-# RECURSOS
+## RECURSOS
 - Busca de cidades por nome.
 - Efeito Glassmorphism construído inteiramente com o Tailwind, para conferir elegância e modernidade à interface.
 - Tela de carregamento e tratamento de erros.
@@ -32,17 +32,17 @@ Futuramente, pretendo implementar outras melhorias neste projeto, tais como: a p
 - Design pensado para a adaptabilidade a qualquer dispositivo e acessibilidade do usuário.
 - Capacidade de mostrar e ocultar partes da interface, exibindo para o usuário apenas as informações que ele deseja no momento.
 
-# DEMONSTRAÇÃO
+## DEMONSTRAÇÃO
 - [Vídeo 1](https://youtu.be/UQH1eKVlvZk)
 - [Vídeo 2](https://youtu.be/J_-oHoTGi40)
 
-## CAPTURAS DE TELA
+### CAPTURAS DE TELA
 ![Captura de Tela 1](https://andrewnationdev.vercel.app/img/clima-severo/climasevero1.png)
 ![Captura de Tela 2](https://andrewnationdev.vercel.app/img/clima-severo/climasevero2.jpg)
 ![Captura de Tela 3](https://andrewnationdev.vercel.app/img/clima-severo/climasevero3.jpg)
 ![Captura de Tela 4](https://andrewnationdev.vercel.app/img/clima-severo/climasevero4.jpg)
 
-# COMO EXECUTAR
+## COMO EXECUTAR
 
 - Baixe o arquivo zip do repositório e descompacte.
 - Crie um arquivo `.env` com a chave da API que você obtiver do OpenWeatherMap.
