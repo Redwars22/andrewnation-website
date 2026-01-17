@@ -37,13 +37,14 @@
 
 - Desenvolvimento Android com ReactNative e Expo + TypeScript e testes com Jest.
 - Desenvolvimento web com React e NextJS + TypeScript e testes com Cypress.
+- Integração de APIs com fetch
 - Estilização com Sass, Tailwind e Bootstrap.
 - Inglês e Espanhol em nível conversacional, além de conhecimentos em russo, italiano, alemão, árabe e francês.
 - Distros Linux
 - Deploy com Vercel
 - Criação de sites e documentação com Markdown e Docusaurus
 - Criação e publicação de bibliotecas NPM
-- Desenvolvimento desktop com VB.NET e C# (WindowsForms, MonoDevelop e Visual Studio 2022)
+<!-- - Desenvolvimento desktop com VB.NET e C# (WindowsForms, MonoDevelop e Visual Studio 2022)-->
 - Consumo de APIs em aplicações JavaScript/TypeScript em React/ReactNative com o intermédio do ReactQuery e Axios
 - Criação de sites e blogs com o Astro Blog
 - GoogleCollab e Python com NumPy e Pandas
@@ -55,4 +56,9 @@
 
 - Desenvolvimento Android com Kotlin e Android Studio
 - Uso de Python para testes com Selenium
-- Supabase e NextJS
+- Animações com Tailwind Animated
+- Gráficos em aplicações JS com Recharts
+- Integração de APIs com ReactQuery
+- Zustand e Contexts
+- Hooks do React (useContext, useMemo, useCallback)
+- Árabe e Japonês
