@@ -1,7 +1,10 @@
 # ClimaSevero (NOVO)
 
 Essa é uma versão atualizada e melhorada do ClimaSevero (agora legacy) que eu havia feito em Svelt. Agora, decidi refazê-lo em ReactJS, TypeScript e Tailwind, a fim de melhorar a experiência do usuário. A tela inicial do aplicativo é simples e concisa, de modo a auxiliar o usuário na obtenção dos dados sem a necessidade de muitos toques/cliques. Se está à procura da versão legacy, [clique aqui](https://andrewnationdev.vercel.app/docs/projects/climasevero).
-Optei por este projeto porque me auxiliaria bastante na manipulação de dados vindos da API, além de me fornecer uma panorama de como eu deveria estruturar a interface para melhor exibir os dados para o usuário. Também o escolhi como forma de consolidar todos os meus conhecimentos adquiridos até aqui. Futuramente, pretendo implementar outras melhorias neste projeto, tais como: a possibilidade de favoritar cidades para acesso rápido, previsão do tempo por dia, mais dados interessantes, bibliotecas como ReactQuery e Zustand para tornar mais eficiente os processos de obtenção e armazenamento de dados e possivelmente o uso de outras ferramentas do react, como contexts, tornando os dados acessíveis a qualquer componente.
+
+Optei por este projeto porque me auxiliaria bastante na manipulação de dados vindos da API, além de me fornecer um panorama de como eu deveria estruturar a interface para melhor exibir os dados para o usuário. Também o escolhi como forma de consolidar todos os meus conhecimentos adquiridos até aqui. 
+
+Futuramente, pretendo implementar outras melhorias neste projeto, tais como: a possibilidade de favoritar cidades para acesso rápido, previsão do tempo por dia, mais dados interessantes, bibliotecas como ReactQuery e Zustand para tornar mais eficiente os processos de obtenção e armazenamento de dados e possivelmente o uso de outras ferramentas do react, como contexts, tornando os dados acessíveis a qualquer componente.
 
 - Acesse a versão de demonstração [aqui](https://climasevero-v2.vercel.app/)
 - Acesse o repositório [aqui](https://github.com/andrewnationdev/clima-severo-v2)
@@ -33,8 +36,14 @@ Optei por este projeto porque me auxiliaria bastante na manipulação de dados v
 - [Vídeo 1](https://youtu.be/UQH1eKVlvZk)
 - [Vídeo 2](https://youtu.be/J_-oHoTGi40)
 
+## CAPTURAS DE TELA
+![Captura de Tela 1](https://andrewnationdev.vercel.app/img/clima-severo/climasevero1.png)
+![Captura de Tela 2](https://andrewnationdev.vercel.app/img/clima-severo/climasevero2.jpg)
+![Captura de Tela 3](https://andrewnationdev.vercel.app/img/clima-severo/climasevero3.jpg)
+![Captura de Tela 4](https://andrewnationdev.vercel.app/img/clima-severo/climasevero4.jpg)
+
 # COMO EXECUTAR
 
-1-Baixe o arquivo zip do repositório e descompacte.
-2-Crie um arquivo `.env` com a chave da API que você obtiver do OpenWeatherMap.
-3-Instale as dependências com `npm install` e depois execute o projeto com `npm run dev`.
+- Baixe o arquivo zip do repositório e descompacte.
+- Crie um arquivo `.env` com a chave da API que você obtiver do OpenWeatherMap.
+- Instale as dependências com `npm install` e depois execute o projeto com `npm run dev`.
