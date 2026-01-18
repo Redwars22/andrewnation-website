@@ -21,7 +21,7 @@ O ClimaSevero é um programa de previsão do tempo que usa a API do OpenWeatherM
 - TypeScript
 - OpenWeatherMapAPI
 
-## Código-fonte e downloads
+## Downloads
 
+Você pode ver o ClimaSevero em funcionamento [aqui](https://climasevero.vercel.app/).
 
-Você pode ver o ClimaSevero em funcionamento [aqui](https://climasevero.vercel.app/) e obter seu código-fonte e/ou reportar bugs [aqui em seu repositório oficial](https://github.com/Redwars22/climasevero).
