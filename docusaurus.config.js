@@ -86,16 +86,11 @@ const config = {
           },
           {
             position: "left",
-            label: 'Blog',
-            href: 'https://andrewdeviant.vercel.app/'
-          },
-          {
-            position: "left",
             label: "Livros",
             href: 'https://www.amazon.com.br/stores/author/B0D8L8DXF8/allbooks'
           },
           {
-            href: 'https://github.com/Redwars22',
+            href: 'http://github.com/andrewnationdev',
             label: 'GitHub',
             position: 'right',
           },
@@ -134,13 +129,13 @@ const config = {
             title: 'Mais',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
-                label: 'GitHub',
+                label: 'GitHub Conta 1',
                 href: 'https://github.com/Redwars22',
               },
+              {
+                label: 'GitHub Conta 2',
+                href: 'http://github.com/andrewnationdev'
+              }
             ],
           },
         ],
