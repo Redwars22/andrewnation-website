@@ -16,7 +16,7 @@ const ProjectList = [
         ),
         link: "/docs/projects/algometer"
     },
-    {
+    /*{
         title: 'Drewmax',
         description: (
             <>
@@ -24,7 +24,7 @@ const ProjectList = [
             </>
         ),
         link: "/docs/projects/drewmax"
-    },
+    },*/
     {
         title: 'Fahrkelvin',
         description: (
@@ -59,7 +59,7 @@ const ProjectList = [
                 O ClimaSevero é um programa de previsão do tempo que usa a API do OpenWeatherMap para lhe trazer informações sobre o clima em virtualmente qualquer cidade do mundo.
             </>
         ),
-        link: "/docs/projects/climasevero"
+        link: "/docs/2026/clima-severo-v2"
     },
     {
         title: 'Andrew Testing Library (for Python)',
@@ -69,15 +69,6 @@ const ProjectList = [
             </>
         ),
         link: "/docs/Utilitários/andrewtestlibpy"
-    },
-    {
-        title: 'API de Produtos',
-        description: (
-            <>
-                Uma API RESTful simples para cadastro, listagem e consulta de produtos, desenvolvida com Node.js, Express e MySQL. Ela em breve será usada em um projeto fullstack que desenvolverei.
-            </>
-        ),
-        link: "/docs/Fullstack/api_produtos"
     },
     {
         title: 'DrewNote',
@@ -104,7 +95,7 @@ const ProjectList = [
             <>
                 O Lingobase é uma plataforma para criar e compartilhar línguas construídas (conlangs) com propósitos artísticos, de comunicação ou pesquisa. Convida a comunidade a colaborar no desenvolvimento do projeto de código aberto.
             </>
-        )
+        ),
     },
     {
         title: 'Sistema de Gestão Empresarial (SGE)',
@@ -113,6 +104,15 @@ const ProjectList = [
                 O SGE é uma solução robusta e intuitiva que otimiza a organização e produtividade da equipe, com módulos essenciais para gestão de pessoas e tarefas em uma plataforma centralizada.
             </>
         )
+    },
+    {
+        title: 'Andrew Targama',
+        description: (
+            <>
+                O Targama é uma aplicação de tradução pensada para ser rápida, simples e prática. Ela oferece traduções diretamente na interface, permite salvar traduções favoritas localmente no navegador e prioriza uma experiência limpa e responsiva em dispositivos móveis e desktop.
+            </>
+        ),
+        link: '/docs/2026/targama'
     }
 ];
 

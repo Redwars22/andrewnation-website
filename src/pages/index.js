@@ -28,7 +28,12 @@ function HomepageHeader() {
           >
             Meus livros e contos
           </a>
-          <a href="https://www.buymeacoffee.com/andrewnation"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=☕&slug=andrewnation&button_colour=40DCA5&font_colour=ffffff&font_family=Cookie&outline_colour=000000&coffee_colour=FFDD00" /></a>
+          <a
+            className="button button--secondary button--lg"
+            href="https://patreon.com/andrewnationdev?utm_medium=unknown&utm_source=join_link&utm_campaign=creatorshare_creator&utm_content=copyLink"
+          >
+            Conteúdo Adicional
+          </a>
         </div>
       </div>
     </header>
