@@ -55,10 +55,15 @@
 ## Estudando no momento
 
 - Desenvolvimento Android com Kotlin e Android Studio
-- Uso de Python para testes com Selenium
 - Animações com Tailwind Animated
 - Gráficos em aplicações JS com Recharts
 - Integração de APIs com ReactQuery
 - Zustand e Contexts
 - Hooks do React (useContext, useMemo, useCallback)
 - Árabe e Japonês
+- Frameworks Angular e Nuxt, para conhecer frameworks diversos do React/NextJS a fim de observar os pontos fortes de cada, auxiliando na escolha do framework para projetos futuros, além de me fornecer uma base sólida sobre como funcionam frameworks e a estrutura básica que todos compartilham entre ai, ainda que o meu enfoque seja o React/NextJS.
+- PowerBI - Conceitos básicos 
+
+## Certificados Sololearn
+
+![Certificado Angular](https://andrewnationdev.vercel.app/certificados/angular.png)
