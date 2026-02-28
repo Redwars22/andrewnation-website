@@ -66,4 +66,4 @@
 
 ## Certificados Sololearn
 
-![Certificado Angular](https://andrewnationdev.vercel.app/certificados/angular.png)
+![Certificado Angular](https://andrewnationdev.vercel.app/angular.jng)
