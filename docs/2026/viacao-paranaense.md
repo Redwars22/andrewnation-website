@@ -10,6 +10,14 @@ Projeto fullstack com Nuxt para uma empresa fictícia de transporte intermunicip
 
 Este é o meu primeiro projeto fullstack com o framework NuxtJS/VueJS. Sempre uso ReactJS, normalmente com NextJS, nos meus projetos, sobretudo nos maiores, porém desta vez quis fazer este com NuxtJS, tanto para aprender e ver como funciona na prática, quanto para tirar conclusões pessoais de como ele se difere do NextJS e em quais contextos performaria melhor. Criei o projeto pensando no fluxo de compra de passagens intermunicipais e interestaduais de empresas de transporte reais. A partir de um breve estudo e análise desses fluxos, surgiu este projeto.
 
+## CAPTURAS DE TELA E CONCEITO DE INTERFACE
+
+<div style="display: flex; gap: 10px; justify-content: space-between;">
+  <img src="https://andrewnationdev.vercel.app/img/viacao-paranaense/img1.png" alt="Fluxo inicial da compra de passagens" style="width: 32%; border-radius: 8px;">
+  <img src="https://andrewnationdev.vercel.app/img/viacao-paranaense/img2.png" alt="Escolha da viagem" style="width: 32%; border-radius: 8px;">
+  <img src="https://andrewnationdev.vercel.app/img/viacao-paranaense/img3.png" alt="Verificar bilhetes comprados anteriormente" style="width: 32%; border-radius: 8px;">
+</div>
+
 ## USO E INSTALAÇÃO
 Após descompactar o projeto, execute o seguinte comando no terminal para instalar as dependências e executá-lo em `localhost`: `pnpm install && npm run dev`
 
