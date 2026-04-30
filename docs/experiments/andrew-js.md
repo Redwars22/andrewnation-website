@@ -74,6 +74,8 @@ const store = createStore((set) => ({
 }));
 ```
 
+Para acessar a propriedade `count` lá nesse store, use `store.getState().count`.
+
 ## EXEMPLO BLOCO DE NOTAS
 
 ```ts
@@ -131,11 +133,47 @@ class BlocoNotas extends Component {
 
 Os helpers são utilitários para auxiliar em algumas tarefas, reduzindo a quantidade de código necessária.
 
-`useSelector(ref, id)`.
+## useSelector(ref, id)
+
+Usado para selecionar um elemento no DOM.
 
 Exemplo:
 
 ```ts
 //Seleciona o elemento com o id #add-todo
 const addButton: Element = useSelector(this?.ref!, "#add-todo");
+```
+
+## PARÂMETROS DE ROTA
+
+Na rota, os parâmetros são passados assim: `#/home?id=9`. Tudo o que estiver depois do `?` são os parâmetros. Para acessá-los dentro do componente, use `this.props.[chave]`. Por exemplo, para acessar o `id` no exemplo anterior use `this.props.id`.
+
+## ANINHAMENTO DE COMPONENTES
+
+Para colocar um componente dentro outro, deve-se instanciar esse componente e depois chamar a função `render()` no local em que ele será renderizado.
+
+```ts
+class HomePage extends Component {
+    header = new Header();
+    footer = new Footer();
+    listaNotas = new ListaTarefasComponente();
+
+    render(){
+        return `
+            <div class="w-full min-h-screen">
+                <div id="header">${this.header.render()}</div>
+                <div class="my-12">
+                 <div id="content">${this.listaNotas.render()}</div>
+                </div>
+                <div id="footer">${this.footer.render()}</div>
+            </div>
+        `;
+    }
+
+    afterRender(){
+        this.attachChild(this.header, "#header");
+        this.attachChild(this.listaNotas, "#content");
+        this.attachChild(this.footer, "#footer");
+    }
+}
 ```
