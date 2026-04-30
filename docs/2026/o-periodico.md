@@ -57,11 +57,3 @@ npm run start
 ```bash
 npm run build
 ```
-
-## Pontos de evolução sugeridos
-
-1. Integrar os artigos a uma API real em vez de dados estáticos.
-2. Implementar lógica completa de adicionar/remover favoritos na página de artigo.
-3. Exibir contador dinâmico de favoritos no cabeçalho.
-4. Criar página 404 dedicada em vez de fallback para visualizador de post.
-5. Adicionar testes de integração para fluxos de navegação e favoritos.

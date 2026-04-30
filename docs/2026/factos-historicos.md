@@ -32,36 +32,8 @@ Entregar uma experiência de leitura digital com estética minimalista, prioriza
 
 ### Código-fonte
 
-- Repositório no GitHub: https://github.com/andrewnationdev/site-noticias-angular
+- Repositório no GitHub (da base usada): https://github.com/andrewnationdev/site-noticias-angular
 
 ### Versão em deploy
 
-- Edição/execução online (StackBlitz): https://operiodico.vercel.app/
-
-## Como executar localmente
-
-1. Instalar dependências:
-
-```bash
-npm install
-```
-
-2. Rodar em desenvolvimento:
-
-```bash
-npm run start
-```
-
-3. Gerar build de produção:
-
-```bash
-npm run build
-```
-
-## Pontos de evolução sugeridos
-
-1. Integrar os artigos a uma API real em vez de dados estáticos.
-2. Implementar lógica completa de adicionar/remover favoritos na página de artigo.
-3. Exibir contador dinâmico de favoritos no cabeçalho.
-4. Criar página 404 dedicada em vez de fallback para visualizador de post.
-5. Adicionar testes de integração para fluxos de navegação e favoritos.
+- Edição online: https://blogfactoshistoricos.vercel.app/
