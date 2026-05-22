@@ -31,6 +31,10 @@
 
 7- **Modelagem de Dados:** Fundação Bradesco. *Carga Horária 8 horas*
 
+8- **Swift 4:** Sololearn.
+
+9- **Linguagem C:** Sololearn.
+
 [CERTIFICADOS](https://github.com/Redwars22/andrewnation-website/tree/main/certfs)
 
 ## Habilidades e conhecimentos adquiridos (hard-skills):

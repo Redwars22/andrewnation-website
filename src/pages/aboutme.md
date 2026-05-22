@@ -1,6 +1,6 @@
 # Sobre mim
 
-Sou estudante de Engenharia de Software e estou em busca de atingir o próximo degrau de experiência na área do desenvolvimento, especialmente front-end e mobile. Tenho uma sede insaciável pelo conhecimento e por saber como tudo funciona, gosto de ir além da interface dos aplicativos e da parte superficial, gosto de saber como tudo funciona de baixo dos panos e ter uma visão global de como tudo isso se encaixa junto e resulta no produto final. No momento estou disponível para contratação. Para entrar em contato comigo, [clique aqui](mailto:andrewnationdev@gmail.com).
+Sou estudante de Engenharia de Software e estou em busca de atingir o próximo degrau de experiência na área do desenvolvimento, especialmente front-end e mobile. Tenho uma sede insaciável pelo conhecimento e por saber como tudo funciona, gosto de ir além da interface dos aplicativos e da parte superficial, gosto de saber como tudo funciona de baixo dos panos e ter uma visão global de como tudo isso se encaixa junto e resulta no produto final. No momento estou disponível para contratação ou freelancing. Para entrar em contato comigo, [clique aqui](mailto:andrewnationdev@gmail.com).
 
 Além de estudante de Engenharia de Software, também sou poliglota, linguista como hobby e escritor.
 
