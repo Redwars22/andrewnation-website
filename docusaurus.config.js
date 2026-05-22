@@ -111,10 +111,14 @@ const config = {
           {
             title: 'Outros Links',
             items: [
-              /*{
-                label: 'WattPad',
-                href: 'https://www.wattpad.com/user/andrewnation69',
-              },*/
+              {
+                label: 'Archive of Our Own',
+                href: 'https://archiveofourown.org/users/andrew_nation',
+              },
+              {
+                label: 'YouTube',
+                href: 'https://www.youtube.com/channel/UCp7_4zRxPEeNLHvtQDw8KVA/',
+              },
               /*{
                 label: 'Livros',
                 href: 'https://www.amazon.com.br/stores/Andrew-Nation/author/B0D8L8DXF8'

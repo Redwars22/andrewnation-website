@@ -2,7 +2,7 @@
 
 ## Visão geral
 
-O Periódico é uma aplicação front-end construída com Angular que simula um portal de notícias com foco em leitura limpa e navegação simples. O projeto apresenta uma listagem de artigos, página de leitura, seção de favoritos e layout editorial com cabeçalho e rodapé fixos. Há uma API em desenvolvimento que também será publicada aqui.
+O Factos Históricos (baseado em O Periódico) é uma aplicação front-end construída com Angular que detalha fatos e curiosidades da história do Brasil e do mundo e o seu layout tem foco em leitura limpa e navegação simples. O projeto apresenta uma listagem de artigos, página de leitura, seção de favoritos e layout editorial com cabeçalho e rodapé fixos.
 
 ## Objetivo
 

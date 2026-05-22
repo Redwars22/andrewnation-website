@@ -113,6 +113,33 @@ const ProjectList = [
             </>
         ),
         link: '/docs/2026/targama'
+    },
+    {
+        title: 'Andrew JS',
+        description: (
+            <>
+                Este é um projeto experimental que propõe criar um MVP de um framework JavaScript para fins de estudos.
+            </>
+        ),
+        link: '/docs/experiments/andrew-js'
+    },
+    {
+        title: 'Andrew Tiger',
+        description: (
+            <>
+                O **Andrew Tiger** é um gerenciador de estado criado para ser simples, performático e multi-framework por natureza (ReactJS e Vue)
+            </>
+        ),
+        link: '/docs/2026/andrew-tiger'
+    },
+    {
+        title: 'Factos Historicos',
+        description: (
+            <>
+                O "Factos Históricos" é uma aplicação front-end construída com Angular que detalha fatos e curiosidades da história do Brasil e do mundo e o seu layout tem foco em leitura limpa e navegação simples.
+            </>
+        ),
+        link: '/docs/2026/factos-historicos'
     }
 ];
 
