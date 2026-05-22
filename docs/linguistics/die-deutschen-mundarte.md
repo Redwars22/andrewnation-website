@@ -31,9 +31,9 @@ PHONOLOGISCHE ENTWICKLUNG
 
 § Ich beginne mit einigen Wörtern im Althochdeutschen und erkläre ihre phonologische Entwicklung von dieser alten Sprache bis zum Rheinhessischen, Riograndenser Hunsrückischen und Hochdeutschen. Für Plattdeutsch (Plautdietsch) muss ich Altsächsisch benutzen, um die Etymologien zu erklären. Es ist fast unmöglich, all die Ausnahmen zu erklären. Deswegen habe ich ausgewählt, nur ein paar Beispiele zu zeigen.
 
-*   **hia(r)/hiir**: In vielen deutschen Varianten wird das <r> am Ende der Silben als /a/ ausgesprochen und dieses Phänomen passiert auch im Plattdeutschen. Dieses Wort wird: HD _hier_; RH _hier;_ RHuns _hier_. In Plattdeutsch kommt das Wort _hia_ aus Altsächsisch _hiir_.
+*   **hia(r)/hiir**: In vielen deutschen Varianten wird das /r/ am Ende der Silben als /a/ ausgesprochen und dieses Phänomen passiert auch im Plattdeutschen. Dieses Wort wird: HD _hier_; RH _hier;_ RHuns _hier_. In Plattdeutsch kommt das Wort _hia_ aus Altsächsisch _hiir_.
     
-*   **diutisk/thiudisk**: Die <sk>-Kombination wird als /S/ später gesprochen. Deswegen haben wir: HD _Deutsch_; RH und RHuns _Deitsch_ /tajtS/; das Wort _Dietsch_ in Plautdietsch kommt aus _thiudisk_ in Altsächsisch, aber <th> wird <d> wie in allen deutschen Varianten. Der Diphthong /iu/ entwickelt sich wie /Oi/ in HD, /ai/ in RH und RHuns; und /i:/ in Plaut.
+*   **diutisk/thiudisk**: Die /sk/-Kombination wird als /S/ später gesprochen. Deswegen haben wir: HD _Deutsch_; RH und RHuns _Deitsch_ /tajtS/; das Wort _Dietsch_ in Plautdietsch kommt aus _thiudisk_ in Altsächsisch, aber /th/ wird /d/ wie in allen deutschen Varianten. Der Diphthong /iu/ entwickelt sich wie /Oi/ in HD, /ai/ in RH und RHuns; und /i:/ in Plaut.
     
 *   **stein/steen**: Die /s/ am Anfang des Wortes wird /S/ in allen den Varianten, die wir in diesem Buch studieren, aber Plaut ist die Ausnahme. Es wird: HD _Stein_ mit /ai/; RH _Stå_ mit einem Vokal zwischen /a/ und /O/; RHuns und Plaut _Steen_ (in RHuns _Steen_ < AltHD _stein_ und Plaut _Steen_ < AltS _steen_) mit langem /e/_._ Der Diphthong /ei/ wird /ai/ im Hochdeutschen, zu _/å_/ im Rheinhessischen und zu langem /e:/ in RHuns. Lange /e:/ in Plaut kommt aus /e:/ in Altsächsisch. Die –n-Endung verschwindet oft in RHuns und RH.
     
@@ -41,9 +41,9 @@ PHONOLOGISCHE ENTWICKLUNG
     
 *   **boum/boom**: Der /ou/-Diphthong wird zu /au/ in HD transformiert: _Baum_. Er wird zu /a:/ in RH (z. B.: _Baam_) und zu /O:/ in RHuns (z. B.: _Baam_ /bO:m/). Das Wort _Boom_ in Plaut, mit langem /o:/, kommt aus AltS _boom_, mit einem langen Vokal auch.
     
-*   **tood/dooth:** Hier kann man sehen, dass der /d/-Konsonant im HD oft stimmlos wurde. z.B. : HD und RH _Tod_; RHuns _Dod_, mit <d> als /t/ ohne Aspiration ausgesprochen. Im Platt haben wir _Doot_, aus AltS _dooth_.
+*   **tood/dooth:** Hier kann man sehen, dass der /d/-Konsonant im HD oft stimmlos wurde. z.B. : HD und RH _Tod_; RHuns _Dod_, mit /d/ als /t/ ohne Aspiration ausgesprochen. Im Platt haben wir _Doot_, aus AltS _dooth_.
     
-*   **mahhoon/makoon**: Der germanische /k/-Laut zwischen Vokalen wurde zu /x/ im HD transformiert. Aus AltHD _mahhon_ haben wir: HD _machen_; RH _maghe,_ in dem <gh> den stimmhaften /x/-Laut repräsentiert; RHuns _mache_. Der /k/-Laut ist in diesem Kontext nicht transformiert. Deswegen haben wir Platt _moake(n)_, aus AltS _makoon_. Der /a/-Vokal wurde oft /oa/ in Plautdietsch.
+*   **mahhoon/makoon**: Der germanische /k/-Laut zwischen Vokalen wurde zu /x/ im HD transformiert. Aus AltHD _mahhon_ haben wir: HD _machen_; RH _maghe,_ in dem /gh/ den stimmhaften /x/-Laut repräsentiert; RHuns _mache_. Der /k/-Laut ist in diesem Kontext nicht transformiert. Deswegen haben wir Platt _moake(n)_, aus AltS _makoon_. Der /a/-Vokal wurde oft /oa/ in Plautdietsch.
     
 *   **taga/dagos**: Diese Form war die Mehrzahl von “Tag”. Sie wurde: HD _Tage_; RH _Daaghe_; RHuns _Daagh_. Im Platt ist dieses Wort _Doag_, das aus AltS _dagos_ kommt. Das ist ein unregelmäßiges Wort im Platt, weil seine Einzahl _Dach_ ist.
     
@@ -62,7 +62,7 @@ GRAMMATIK
 
 § Altsächsisch hatte vier, wie Althochdeutsch. Einige Formen, die in älteren Texten gefunden sind, zeigen, dass es einen fünften Kasus gab, nämlich den Instrumental. Das Plautdietsch, das in Colônia Wittmarsum und anderen Teilen Brasiliens gesprochen wird, präserviert nur zwei Kasus (Nominativ-Akkusativ und Dativ).
 
-§ In beiden Althochdeutsch und Altsächsisch passiert diese Vereinfachung hauptsächlich wegen der Reduktion der Vokale zu einem Schwa, das ein schwacher Laut von <e> in der Rechtschreibung repräsentiert wird. Deswegen verschwinden die Veränderungen zwischen vielen Formen.
+§ In beiden Althochdeutsch und Altsächsisch passiert diese Vereinfachung hauptsächlich wegen der Reduktion der Vokale zu einem Schwa, das ein schwacher Laut von /e/ in der Rechtschreibung repräsentiert wird. Deswegen verschwinden die Veränderungen zwischen vielen Formen.
 
 In den Verben wird der /n/-Laut am Ende einiger Wörter und Infinitive nicht ausgesprochen und es passiert in RHuns, Plaut und RH. z. B.: RHuns _machen > mache’_; Plaut _moaken > moake_; RH _maghen ~ marren > maghe ~ marre_.
 
