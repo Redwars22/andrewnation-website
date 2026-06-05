@@ -5,6 +5,10 @@ O Sistema de Gestão Empresarial (SGE) é uma solução robusta e intuitiva proj
 
 [Teste o Protótipo Aqui](https://sge-sistema-ger-empresarial.vercel.app/login)
 
+CREDENCIAIS DE LOGIN:
+- E-mail: `adminpadrao@gmail.com`
+- Senha: `admin`
+  
 Gostou do modelo? Entre em contato no email **andrewnationdev@gmail.com** para realizar um orçamento e obter acesso ao repositório privado no GitHub onde publicarei novas atualizações do modelo periodicamente,
 
 ## Protótipos de Interface
