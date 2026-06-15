@@ -78,4 +78,4 @@ Uma tela de vendas inteligente:
 * **Laravel 12** (Core do backend)  
 * **Filament PHP v3** (Painel administrativo completo e elegante)  
 * **Simple QR Code** (Preparado para gerar códigos QR em passagens)  
-* **Tailwind CSS** & **AlpineJS** (Interfaces interativas rápidas)
+* **AlpineJS** (Interfaces interativas rápidas)
