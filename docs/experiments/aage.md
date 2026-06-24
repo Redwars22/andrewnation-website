@@ -1,5 +1,9 @@
 # AAGE (ANDREW ADVANCED GAME ENGINE) 
 
+Esqueleto abstrato de uma engine de jogos 2D em C++ usando bibliotecas como o `raylib`.
+
+[CÓDIGO FONTE](https://github.com/andrewnationdev/aage)
+
 ## 1. SOBRE O PROJETO
 
 O AAGE é um esqueleto abstrato de uma engine de jogos 2D focado em baixo
