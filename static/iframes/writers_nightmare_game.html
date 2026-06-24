@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Writer's Nightmare - Match-3 Prototype</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Playfair+Display:ital,wght=0,400;0,700;1,400&family=Inter:wght=300;400;600&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: radial-gradient(circle at center, #111827 0%, #030712 100%);
+        }
+        .typewriter-font {
+            font-family: 'Special Elite', monospace;
+        }
+        .serif-font {
+            font-family: 'Playfair Display', serif;
+        }
+        .glow-amber {
+            box-shadow: 0 0 15px rgba(245, 158, 11, 0.15);
+        }
+        .glow-purple {
+            box-shadow: 0 0 20px rgba(168, 85, 247, 0.4);
+            animation: pulse-glow 2s infinite alternate;
+        }
+        @keyframes pulse-glow {
+            0% { transform: scale(1); box-shadow: 0 0 12px rgba(168, 85, 247, 0.3); }
+            100% { transform: scale(1.05); box-shadow: 0 0 20px rgba(168, 85, 247, 0.7); }
+        }
+        .board-bg {
+            background: linear-gradient(135deg, #181614 0%, #0a0908 100%);
+            border: 6px solid #241c18;
+            box-shadow: inset 0 0 20px rgba(0,0,0,0.9), 0 8px 20px rgba(0,0,0,0.8);
+        }
+        .grid-slot {
+            background-color: rgba(20, 16, 14, 0.7);
+            box-shadow: inset 0 0 5px rgba(0,0,0,0.6);
+        }
+        .fade-out-scale {
+            animation: fadeOutScale 0.2s forwards ease-out;
+        }
+        @keyframes fadeOutScale {
+            0% { transform: scale(1); opacity: 1; }
+            100% { transform: scale(0); opacity: 0; }
+        }
+        .fall-anim {
+            animation: fallEffect 0.2s cubic-bezier(0.25, 1, 0.5, 1);
+        }
+        @keyframes fallEffect {
+            0% { transform: translateY(-30px); opacity: 0.5; }
+            100% { transform: translateY(0); opacity: 1; }
+        }
+        .shake {
+            animation: shakeScreen 0.35s ease-in-out;
+        }
+        @keyframes shakeScreen {
+            0%, 100% { transform: translate(0, 0); }
+            10%, 30%, 50%, 70%, 90% { transform: translate(-3px, 1px); }
+            20%, 40%, 60%, 80% { transform: translate(3px, -1px); }
+        }
+    </style>
+</head>
+<body class="min-h-screen text-slate-100 flex flex-col items-center justify-between p-4 overflow-x-hidden select-none">
+
+    <!-- Header (Dynamic & Adaptable) -->
+    <header class="w-full max-w-md flex justify-between items-center border-b border-amber-950/40 pb-3 mb-2">
+        <!-- Left Side -->
+        <div class="flex items-center gap-2">
+            <span class="typewriter-font text-amber-600 text-lg">✍</span>
+            <span id="header-title" class="serif-font text-xl font-bold text-amber-100 tracking-wider">Writer's Nightmare</span>
+        </div>
+        
+        <!-- Right Side (Switches based on game screen) -->
+        <div class="flex items-center gap-2">
+            <button id="audio-toggle" class="px-2.5 py-1 border border-amber-950/60 rounded text-xs bg-amber-950/10 text-amber-300 hover:bg-amber-900/20 transition-all flex items-center gap-1.5">
+                <svg id="audio-icon" class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
+                    <path d="M14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77zm-3 0L6 7H2v10h4l5 3.77V3.23z"/>
+                </svg>
+                <span id="audio-status">Sounds</span>
+            </button>
+            <button id="abandon-btn" onclick="changeScreen('levels')" class="hidden px-2.5 py-1 bg-red-950/40 hover:bg-red-900/30 border border-red-900/60 rounded text-xs text-red-400 font-semibold transition-all">
+                Abandon
+            </button>
+        </div>
+    </header>
+
+    <!-- MAIN SCREEN CONTAINER -->
+    <main class="w-full max-w-md flex-grow flex items-center justify-center py-2">
+        
+        <!-- SCREEN 1: MAIN MENU -->
+        <div id="screen-menu" class="w-full bg-stone-900/90 border border-amber-900/40 p-8 rounded-2xl glow-amber text-center space-y-8">
+            <div class="space-y-2">
+                <h1 class="serif-font text-4xl font-bold text-amber-100 tracking-tight leading-none">Writer's<br><span class="text-red-500">Nightmare</span></h1>
+                <p class="text-xs text-amber-500/70 italic typewriter-font">"Where every word demanded costs your sanity."</p>
+            </div>
+
+            <div class="space-y-4">
+                <button onclick="changeScreen('levels')" class="w-full py-3.5 bg-amber-900/40 hover:bg-amber-800/50 border border-amber-700/50 rounded-xl font-semibold text-amber-100 tracking-wide transition-all duration-200 transform hover:scale-[1.01] active:scale-[0.99]">
+                    Start Writing
+                </button>
+                <button onclick="toggleHelp(true)" class="w-full py-2.5 bg-stone-950/60 hover:bg-stone-900 border border-stone-800 rounded-xl text-sm font-medium text-stone-300 transition-all">
+                    Rules Manual
+                </button>
+                <button id="reset-btn" onclick="resetProgress()" class="w-full py-1.5 text-[10px] text-red-400/60 hover:text-red-400 transition-all">
+                    Reset Saved Progress
+                </button>
+            </div>
+
+            <div class="text-[10px] text-stone-600 typewriter-font">
+                The blank page stares back at you...
+            </div>
+        </div>
+
+        <!-- SCREEN 2: LEVEL SELECTOR -->
+        <div id="screen-levels" class="w-full bg-stone-900/80 border border-amber-900/30 p-6 rounded-2xl glow-amber hidden space-y-6">
+            <div class="flex justify-between items-center border-b border-stone-800 pb-3">
+                <div>
+                    <h2 class="serif-font text-xl text-amber-100 font-bold">Chapters</h2>
+                    <p class="text-[10px] text-stone-400">Select a stage of your ordeal</p>
+                </div>
+                <button onclick="changeScreen('menu')" class="px-2.5 py-1 bg-stone-950 border border-stone-800 rounded text-[10px] text-stone-400 hover:text-amber-300 transition-all">
+                    Back to Menu
+                </button>
+            </div>
+
+            <!-- Levels Grid -->
+            <div id="levels-grid" class="grid grid-cols-2 sm:grid-cols-5 gap-3">
+                <!-- Dynamically injected -->
+            </div>
+        </div>
+
+        <!-- SCREEN 3: GAME BOARD -->
+        <div id="screen-game" class="w-full hidden flex flex-col gap-4 items-center">
+            
+            <!-- Targets & Progress Panel -->
+            <div class="w-full grid grid-cols-3 gap-2.5 text-center">
+                <div class="bg-stone-900/90 p-2 rounded-xl border border-amber-950/40">
+                    <span class="block text-[9px] uppercase tracking-wider text-amber-600 font-bold">Moves</span>
+                    <span id="moves-count" class="typewriter-font text-xl font-bold text-amber-100">0</span>
+                </div>
+                <div class="bg-stone-900/90 p-2 rounded-xl border border-amber-950/40">
+                    <span class="block text-[9px] uppercase tracking-wider text-amber-600 font-bold">Score</span>
+                    <span id="score-count" class="typewriter-font text-xl font-bold text-amber-400">0</span>
+                </div>
+                <div class="bg-stone-900/90 p-2 rounded-xl border border-amber-950/40">
+                    <span class="block text-[9px] uppercase tracking-wider text-amber-600 font-bold">Target</span>
+                    <span id="target-score" class="typewriter-font text-xl font-bold text-emerald-400">0</span>
+                </div>
+            </div>
+
+            <!-- Compact Game Board -->
+            <div id="board-container" class="relative w-full aspect-square max-w-[400px]">
+                <!-- Actual board grid -->
+                <div id="game-board" class="board-bg w-full h-full rounded-2xl grid grid-cols-8 grid-rows-8 p-1.5 gap-1 select-none touch-none">
+                    <!-- Dynamically injected -->
+                </div>
+
+                <!-- Shuffle Overlay -->
+                <div id="shuffle-overlay" class="hidden absolute inset-0 bg-black/85 backdrop-blur-sm z-40 rounded-2xl flex flex-col items-center justify-center text-center p-4">
+                    <span class="text-amber-500 text-3xl mb-2 animate-spin" style="animation-duration: 2.4s;">🔄</span>
+                    <h3 class="serif-font text-lg text-amber-100 font-bold">No Matches Left!</h3>
+                    <p class="text-[10px] text-stone-400 typewriter-font uppercase tracking-wider">Reorganizing your ideas...</p>
+                </div>
+
+                <!-- Interaction Blocker -->
+                <div id="interaction-blocker" class="hidden absolute inset-0 bg-transparent z-50"></div>
+            </div>
+
+            <div id="combo-alert" class="hidden text-red-400 text-xs typewriter-font animate-bounce uppercase tracking-wider">
+                ⚡ Quick Surge of Inspiration! ⚡
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Info Modal (How to Play) -->
+    <div id="help-modal" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4 hidden">
+        <div class="bg-stone-900 border-2 border-amber-900/60 p-6 rounded-xl max-w-xs w-full shadow-2xl">
+            <h2 class="serif-font text-lg text-amber-100 mb-3 border-b border-amber-950 pb-1 text-center">Writer's Manual</h2>
+            <div class="space-y-3 text-xs text-stone-300 leading-relaxed">
+                <p>Combine literary symbols to recover your sanity:</p>
+                <ul class="list-disc pl-4 space-y-1.5 text-amber-200/90">
+                    <li>Align <strong>3 identical items</strong> to destroy them.</li>
+                    <li>Align <strong>4 identical items</strong> to create a powerful <strong>Inspiration Star</strong> (Purple).</li>
+                    <li>Swap the Star with any neighboring item to clear **all** copies of that type from the board at once!</li>
+                </ul>
+            </div>
+            <button onclick="toggleHelp(false)" class="mt-5 w-full py-2 bg-amber-800 hover:bg-amber-700 text-stone-950 font-bold rounded text-xs uppercase tracking-wider transition-all">
+                Start Trial
+            </button>
+        </div>
+    </div>
+
+    <!-- Game Over Modal (Results screen) -->
+    <div id="gameover-modal" class="fixed inset-0 bg-black/90 backdrop-blur-md z-50 flex items-center justify-center p-4 hidden">
+        <div class="bg-stone-950 border-4 border-red-950 p-6 rounded-xl max-w-xs w-full text-center shadow-2xl">
+            <div id="result-icon" class="text-amber-500 text-4xl mb-2 typewriter-font">✍</div>
+            <h2 id="result-title" class="serif-font text-xl text-red-100 mb-1 font-bold">Writer's Block</h2>
+            <p id="result-desc" class="text-[11px] text-stone-400 mb-4 italic">"The deadline ran out and the words consumed you."</p>
+            
+            <div class="bg-stone-900/80 p-3 rounded border border-amber-950/60 mb-4 text-left text-xs">
+                <div class="flex justify-between py-1 border-b border-stone-800">
+                    <span class="text-stone-400">Your Score:</span>
+                    <span id="result-score" class="font-bold text-amber-300 typewriter-font">0</span>
+                </div>
+                <div class="flex justify-between py-1 border-b border-stone-800">
+                    <span class="text-stone-400">Chapter Target:</span>
+                    <span id="result-target" class="font-bold text-emerald-400 typewriter-font">0</span>
+                </div>
+            </div>
+
+            <div class="flex gap-2">
+                <button onclick="changeScreen('levels')" class="flex-1 py-2 bg-stone-900 hover:bg-stone-800 border border-stone-800 text-stone-300 text-xs rounded uppercase tracking-wider font-semibold transition-all">
+                    Chapters
+                </button>
+                <button id="result-action-btn" class="flex-1 py-2 bg-amber-800 hover:bg-amber-700 text-stone-950 text-xs rounded uppercase tracking-wider font-bold transition-all">
+                    Try Again
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="w-full text-center mt-2 text-[9px] text-stone-600 typewriter-font">
+        Dark Match-3 • Midnight Desk
+    </footer>
+
+    <script>
+        /* --- LEVELS JSON DATA (10 Balanced Levels) --- */
+        const LEVELS_DATA = [
+            { id: 1, difficulty: "Easy", moves: 25, targetScore: 300 },
+            { id: 2, difficulty: "Easy", moves: 22, targetScore: 450 },
+            { id: 3, difficulty: "Medium", moves: 20, targetScore: 600 },
+            { id: 4, difficulty: "Medium", moves: 25, targetScore: 850 },
+            { id: 5, difficulty: "Hard", moves: 18, targetScore: 750 },
+            { id: 6, difficulty: "Hard", moves: 22, targetScore: 1000 },
+            { id: 7, difficulty: "Hard", moves: 18, targetScore: 1200 },
+            { id: 8, difficulty: "Insane", moves: 15, targetScore: 900 },
+            { id: 9, difficulty: "Insane", moves: 24, targetScore: 1700 },
+            { id: 10, difficulty: "Nightmare", moves: 20, targetScore: 2000 }
+        ];
+
+        /* --- AUDIO SYNTHESIS SYSTEM (Web Audio API) --- */
+        let audioEnabled = true;
+        const AudioCtx = window.AudioContext || window.webkitAudioContext;
+        let audioCtx = null;
+
+        function initAudio() {
+            if (!audioCtx) audioCtx = new AudioCtx();
+            if (audioCtx.state === 'suspended') audioCtx.resume();
+        }
+
+        document.getElementById('audio-toggle').addEventListener('click', () => {
+            initAudio();
+            audioEnabled = !audioEnabled;
+            document.getElementById('audio-status').textContent = audioEnabled ? 'Sounds' : 'Muted';
+            document.getElementById('audio-toggle').classList.toggle('opacity-50', !audioEnabled);
+        });
+
+        function playTypeSound() {
+            if (!audioEnabled) return;
+            initAudio();
+            const osc = audioCtx.createOscillator();
+            const gain = audioCtx.createGain();
+            osc.connect(gain);
+            gain.connect(audioCtx.destination);
+            osc.type = 'triangle';
+            osc.frequency.setValueAtTime(110 + Math.random() * 90, audioCtx.currentTime);
+            gain.gain.setValueAtTime(0.05, audioCtx.currentTime);
+            gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.04);
+            osc.start();
+            osc.stop(audioCtx.currentTime + 0.04);
+        }
+
+        function playMatchSound() {
+            if (!audioEnabled) return;
+            initAudio();
+            const osc = audioCtx.createOscillator();
+            const osc2 = audioCtx.createOscillator();
+            const gain = audioCtx.createGain();
+            osc.connect(gain);
+            osc2.connect(gain);
+            gain.connect(audioCtx.destination);
+            osc.type = 'sine';
+            osc.frequency.setValueAtTime(800, audioCtx.currentTime);
+            osc2.type = 'triangle';
+            osc2.frequency.setValueAtTime(1000, audioCtx.currentTime);
+            gain.gain.setValueAtTime(0, audioCtx.currentTime);
+            gain.gain.linearRampToValueAtTime(0.07, audioCtx.currentTime + 0.04);
+            gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.35);
+            osc.start();
+            osc2.start();
+            osc.stop(audioCtx.currentTime + 0.35);
+            osc2.stop(audioCtx.currentTime + 0.35);
+        }
+
+        function playCosmicStarSound() {
+            if (!audioEnabled) return;
+            initAudio();
+            const osc = audioCtx.createOscillator();
+            const filter = audioCtx.createBiquadFilter();
+            const gain = audioCtx.createGain();
+            osc.connect(filter);
+            filter.connect(gain);
+            gain.connect(audioCtx.destination);
+            osc.type = 'sawtooth';
+            osc.frequency.setValueAtTime(100, audioCtx.currentTime);
+            osc.frequency.exponentialRampToValueAtTime(1500, audioCtx.currentTime + 0.6);
+            filter.type = 'lowpass';
+            filter.frequency.setValueAtTime(400, audioCtx.currentTime);
+            filter.frequency.exponentialRampToValueAtTime(4000, audioCtx.currentTime + 0.6);
+            gain.gain.setValueAtTime(0, audioCtx.currentTime);
+            gain.gain.linearRampToValueAtTime(0.15, audioCtx.currentTime + 0.15);
+            gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.7);
+            osc.start();
+            osc.stop(audioCtx.currentTime + 0.7);
+        }
+
+        function playShuffleSound() {
+            if (!audioEnabled) return;
+            initAudio();
+            const now = audioCtx.currentTime;
+            for (let i = 0; i < 6; i++) {
+                const osc = audioCtx.createOscillator();
+                const gain = audioCtx.createGain();
+                osc.connect(gain);
+                gain.connect(audioCtx.destination);
+                osc.type = 'sawtooth';
+                osc.frequency.setValueAtTime(90 + Math.random() * 100, now + i * 0.08);
+                gain.gain.setValueAtTime(0.04, now + i * 0.08);
+                gain.gain.exponentialRampToValueAtTime(0.001, now + i * 0.08 + 0.06);
+                osc.start(now + i * 0.08);
+                osc.stop(now + i * 0.08 + 0.06);
+            }
+        }
+
+        /* --- STREAMING_CHUNK: Managing local storage progression --- */
+        /* --- PROGRESS SAVE SYSTEM (LocalStorage) --- */
+        const STORAGE_KEY = "writers_nightmare_unlocked_levels";
+        let unlockedLevels = [1];
+
+        function loadSavedProgress() {
+            try {
+                const saved = localStorage.getItem(STORAGE_KEY);
+                if (saved) {
+                    const parsed = JSON.parse(saved);
+                    if (Array.isArray(parsed) && parsed.length > 0) {
+                        unlockedLevels = parsed;
+                    }
+                }
+            } catch (e) {
+                console.warn("Could not load progression from localStorage.", e);
+            }
+        }
+
+        function saveProgress() {
+            try {
+                localStorage.setItem(STORAGE_KEY, JSON.stringify(unlockedLevels));
+            } catch (e) {
+                console.warn("Could not save progression to localStorage.", e);
+            }
+        }
+
+        function resetProgress() {
+            if (confirm("Are you sure you want to reset your writing progress? All unlocked chapters will be locked again.")) {
+                unlockedLevels = [1];
+                saveProgress();
+                renderLevelsMenu();
+                playTypeSound();
+            }
+        }
+
+        // Initialize progress on boot
+        loadSavedProgress();
+
+        /* --- GAME ENGINE MECHANICS --- */
+        const BOARD_SIZE = 8;
+        
+        /* Custom Item SVGs */
+        const ITEM_SVGS = {
+            1: `<svg class="w-8 h-8 select-none pointer-events-none" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21 3C18 3 14 5 11 8C8 11 6 15 5 18C4.5 19.5 3 21 3 21C3 21 4.5 19.5 6 19C9 18 13 16 16 13C19 10 21 6 21 3Z" stroke="#67e8f9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M8.5 15.5L12 12" stroke="#22d3ee" stroke-width="1.5"/></svg>`, // Quill
+            2: `<svg class="w-8 h-8 select-none pointer-events-none" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 19.5C4 18.8 4.2 18.2 4.7 17.7C5.2 17.2 5.8 17 6.5 17H20V3H6.5C5.8 3 5.2 3.2 4.7 3.7C4.2 4.2 4 4.8 4 5.5V19.5C4 20.1 4.2 20.7 4.7 21.2C5.2 21.7 5.8 22 6.5 22H20" stroke="#fbbf24" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 6H16M8 10H16" stroke="#d97706" stroke-width="1.5"/></svg>`, // Book
+            3: `<svg class="w-8 h-8 select-none pointer-events-none" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14 3H6C5 3 4 4 4 5V19C4 20 5 21 6 21H18C19 21 20 20 20 19V9L14 3Z" stroke="#cbd5e1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 3V9H20M8 13H16M8 17H12" stroke="#64748b" stroke-width="1.5"/></svg>`, // Paper
+            4: `<svg class="w-8 h-8 select-none pointer-events-none" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="3" width="18" height="12" rx="2" stroke="#4ade80" stroke-width="1.5" stroke-linejoin="round"/><path d="M7 15L4 21H20L17 15" stroke="#16a34a" stroke-width="1.5" stroke-linecap="round"/><path d="M9 21H15" stroke="#16a34a" stroke-width="1.5"/></svg>`, // Computer
+            5: `<svg class="w-8 h-8 select-none pointer-events-none" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="6" cy="12" r="4" stroke="#93c5fd" stroke-width="1.5"/><circle cx="18" cy="12" r="4" stroke="#93c5fd" stroke-width="1.5"/><path d="M10 12H14" stroke="#60a5fa" stroke-width="1.5"/><path d="M2 12C2 8 4 6 4 6M22 12C22 8 20 6 20 6" stroke="#2563eb" stroke-width="1.5"/></svg>`, // Glasses
+            6: `<svg class="w-8 h-8 select-none pointer-events-none" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15 17C15 18 14.1 19 13 19H11C9.9 19 9 18 9 17" stroke="#f59e0b" stroke-width="1.5"/><path d="M12 2C8.1 2 5 5.1 5 9C5 11.3 6.1 13.4 8 14.7V17H16V14.7C17.8 13.4 19 11.3 19 9C19 5.1 15.8 2 12 2Z" stroke="#f59e0b" stroke-width="1.5" stroke-linecap="round"/><path d="M10 9H14M12 7V11" stroke="#d97706" stroke-width="1.5"/></svg>`, // Lightbulb
+            99: `<svg class="w-8 h-8 select-none pointer-events-none" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2L15 8L22 9L17 14L18 21L12 17L5.8 21L7 14L2 9L8.9 8L12 2Z" fill="#c084fc" stroke="#a855f7" stroke-width="1.5" stroke-linejoin="round"/><circle cx="12" cy="12" r="2.5" fill="#ffffff" opacity="0.9"/></svg>` // Inspiration Star
+        };
+
+        let currentLevel = null;
+        let board = [];
+        let score = 0;
+        let moves = 0;
+        let selectedTile = null;
+
+        const boardEl = document.getElementById('game-board');
+        const boardContainer = document.getElementById('board-container');
+        const scoreEl = document.getElementById('score-count');
+        const movesEl = document.getElementById('moves-count');
+        const targetEl = document.getElementById('target-score');
+        const interactionBlocker = document.getElementById('interaction-blocker');
+        const comboAlert = document.getElementById('combo-alert');
+
+        function changeScreen(screenId) {
+            playTypeSound();
+            document.getElementById('screen-menu').classList.add('hidden');
+            document.getElementById('screen-levels').classList.add('hidden');
+            document.getElementById('screen-game').classList.add('hidden');
+
+            document.getElementById(`screen-${screenId}`).classList.remove('hidden');
+
+            // Adapt Header to game state
+            const titleEl = document.getElementById('header-title');
+            const audioBtn = document.getElementById('audio-toggle');
+            const abandonBtn = document.getElementById('abandon-btn');
+
+            if (screenId === 'game') {
+                titleEl.textContent = `Chapter ${currentLevel.id < 10 ? '0' + currentLevel.id : currentLevel.id}`;
+                audioBtn.classList.add('hidden');
+                abandonBtn.classList.remove('hidden');
+            } else {
+                titleEl.textContent = "Writer's Nightmare";
+                audioBtn.classList.remove('hidden');
+                abandonBtn.classList.add('hidden');
+            }
+
+            if (screenId === 'levels') {
+                renderLevelsMenu();
+            }
+        }
+
+        function renderLevelsMenu() {
+            const grid = document.getElementById('levels-grid');
+            grid.innerHTML = '';
+
+            LEVELS_DATA.forEach(level => {
+                const isUnlocked = unlockedLevels.includes(level.id);
+                const card = document.createElement('div');
+
+                let diffColor = 'text-green-400';
+                if (level.difficulty === 'Medium') diffColor = 'text-yellow-400';
+                if (level.difficulty === 'Hard') diffColor = 'text-orange-400';
+                if (level.difficulty === 'Insane') diffColor = 'text-red-400';
+                if (level.difficulty === 'Nightmare') diffColor = 'text-purple-400 font-extrabold';
+
+                card.className = `p-3.5 rounded-xl border flex flex-col justify-between text-left transition-all ${
+                    isUnlocked 
+                        ? 'bg-stone-900 border-amber-900/30 hover:border-amber-500/50 cursor-pointer hover:scale-[1.01]' 
+                        : 'bg-stone-950/60 border-stone-900 opacity-50 cursor-not-allowed'
+                }`;
+
+                card.innerHTML = `
+                    <div>
+                        <div class="flex justify-between items-center mb-1">
+                            <span class="typewriter-font text-[9px] text-stone-500">Stage ${level.id < 10 ? '0' + level.id : level.id}</span>
+                            <span class="text-[8px] uppercase font-semibold ${diffColor}">${level.difficulty}</span>
+                        </div>
+                        <h3 class="serif-font font-bold text-xs text-stone-200">Chapter ${level.id}</h3>
+                    </div>
+                `;
+
+                if (isUnlocked) {
+                    card.onclick = () => initGame(level);
+                }
+
+                grid.appendChild(card);
+            });
+        }
+
+        function toggleHelp(show) {
+            playTypeSound();
+            document.getElementById('help-modal').classList.toggle('hidden', !show);
+        }
+
+        /* --- STREAMING_CHUNK: Initializing board and handling interactions --- */
+        function initGame(level) {
+            currentLevel = level;
+            score = 0;
+            moves = level.moves;
+            selectedTile = null;
+
+            scoreEl.textContent = score;
+            movesEl.textContent = moves;
+            targetEl.textContent = level.targetScore;
+
+            comboAlert.classList.add('hidden');
+            document.getElementById('gameover-modal').classList.add('hidden');
+
+            // CRITICAL FIX: Ensure game elements unlock upon load/reload
+            setInteraction(true);
+
+            generateStableBoard();
+            renderBoard();
+            changeScreen('game');
+        }
+
+        function generateStableBoard() {
+            let attempt = 0;
+            while (attempt < 200) {
+                board = [];
+                for (let r = 0; r < BOARD_SIZE; r++) {
+                    board[r] = [];
+                    for (let c = 0; c < BOARD_SIZE; c++) {
+                        board[r][c] = Math.floor(Math.random() * 6) + 1;
+                    }
+                }
+                if (scanForMatches().length === 0 && hasValidMoves()) break;
+                attempt++;
+            }
+        }
+
+        function renderBoard() {
+            boardEl.innerHTML = '';
+            for (let r = 0; r < BOARD_SIZE; r++) {
+                for (let c = 0; c < BOARD_SIZE; c++) {
+                    const cell = document.createElement('div');
+                    cell.className = 'grid-slot rounded-lg flex items-center justify-center relative cursor-pointer overflow-hidden transition-all duration-100 hover:bg-stone-800/60';
+                    cell.dataset.row = r;
+                    cell.dataset.col = c;
+
+                    const type = board[r][c];
+                    if (type) {
+                        const wrapper = document.createElement('div');
+                        wrapper.className = 'w-full h-full flex items-center justify-center p-1 select-none pointer-events-none transition-transform duration-100';
+                        if (type === 99) {
+                            wrapper.classList.add('glow-purple', 'rounded-full');
+                        }
+                        wrapper.innerHTML = ITEM_SVGS[type] || '';
+                        cell.appendChild(wrapper);
+                    }
+
+                    cell.addEventListener('mousedown', handleTileSelection);
+                    cell.addEventListener('touchstart', handleTileSelection, {passive: true});
+                    boardEl.appendChild(cell);
+                }
+            }
+        }
+
+        function handleTileSelection(e) {
+            const row = parseInt(e.currentTarget.dataset.row);
+            const col = parseInt(e.currentTarget.dataset.col);
+            playTypeSound();
+
+            if (selectedTile === null) {
+                selectedTile = { r: row, c: col };
+                highlightTile(row, col, true);
+            } else {
+                const prevR = selectedTile.r;
+                const prevC = selectedTile.c;
+                highlightTile(prevR, prevC, false);
+
+                if (isAdjacent(prevR, prevC, row, col)) {
+                    executeMove(prevR, prevC, row, col);
+                } else {
+                    selectedTile = { r: row, c: col };
+                    highlightTile(row, col, true);
+                }
+            }
+        }
+
+        function highlightTile(r, c, activate) {
+            const el = boardEl.children[r * BOARD_SIZE + c];
+            if (el) {
+                if (activate) {
+                    el.classList.add('border-2', 'border-amber-500', 'bg-stone-800/80', 'scale-95');
+                } else {
+                    el.classList.remove('border-2', 'border-amber-500', 'bg-stone-800/80', 'scale-95');
+                }
+            }
+        }
+
+        function isAdjacent(r1, c1, r2, c2) {
+            return (Math.abs(r1 - r2) === 1 && c1 === c2) || (Math.abs(c1 - c2) === 1 && r1 === r2);
+        }
+
+        function hasValidMoves() {
+            for (let r = 0; r < BOARD_SIZE; r++) {
+                for (let c = 0; c < BOARD_SIZE; c++) {
+                    const current = board[r][c];
+                    if (!current) continue;
+
+                    const directions = [{dr: 0, dc: 1}, {dr: 1, dc: 0}];
+                    for (let dir of directions) {
+                        const nr = r + dir.dr;
+                        const nc = c + dir.dc;
+                        if (nr < BOARD_SIZE && nc < BOARD_SIZE) {
+                            const neighbor = board[nr][nc];
+                            if (!neighbor) continue;
+
+                            if (current === 99 || neighbor === 99) {
+                                return true;
+                            }
+
+                            // Simulate Swap
+                            board[r][c] = neighbor;
+                            board[nr][nc] = current;
+
+                            const matches = scanForMatches();
+
+                            // Undo Swap
+                            board[r][c] = current;
+                            board[nr][nc] = neighbor;
+
+                            if (matches.length > 0) {
+                                return true;
+                            }
+                        }
+                    }
+                }
+            }
+            return false;
+        }
+
+        async function checkAndShuffleIfNeeded() {
+            if (!hasValidMoves()) {
+                setInteraction(false);
+                
+                document.getElementById('shuffle-overlay').classList.remove('hidden');
+                playShuffleSound();
+                await delay(1200);
+
+                let attempts = 0;
+                let success = false;
+                
+                let items = [];
+                for (let r = 0; r < BOARD_SIZE; r++) {
+                    for (let c = 0; c < BOARD_SIZE; c++) {
+                        if (board[r][c]) items.push(board[r][c]);
+                    }
+                }
+
+                while (attempts < 200) {
+                    for (let i = items.length - 1; i > 0; i--) {
+                        const j = Math.floor(Math.random() * (i + 1));
+                        [items[i], items[j]] = [items[j], items[i]];
+                    }
+
+                    let idx = 0;
+                    for (let r = 0; r < BOARD_SIZE; r++) {
+                        for (let c = 0; c < BOARD_SIZE; c++) {
+                            board[r][c] = items[idx++];
+                        }
+                    }
+
+                    if (scanForMatches().length === 0 && hasValidMoves()) {
+                        success = true;
+                        break;
+                    }
+                    attempts++;
+                }
+
+                if (!success) {
+                    generateStableBoard();
+                }
+
+                renderBoard();
+                shakeScreen();
+                await delay(400);
+                document.getElementById('shuffle-overlay').classList.add('hidden');
+                setInteraction(true);
+            }
+        }
+
+        async function executeMove(r1, c1, r2, c2) {
+            setInteraction(false);
+            selectedTile = null;
+
+            const t1 = board[r1][c1];
+            const t2 = board[r2][c2];
+
+            if (t1 === 99 || t2 === 99) {
+                moves--;
+                movesEl.textContent = moves;
+
+                board[r1][c1] = t2;
+                board[r2][c2] = t1;
+                animateSwap(r1, c1, r2, c2);
+                await delay(150);
+
+                await triggerStarPower(r1, c1, r2, c2);
+                return;
+            }
+
+            board[r1][c1] = t2;
+            board[r2][c2] = t1;
+            animateSwap(r1, c1, r2, c2);
+            await delay(150);
+
+            const matches = scanForMatches();
+            if (matches.length > 0) {
+                moves--;
+                movesEl.textContent = moves;
+                await processTurn(matches);
+            } else {
+                board[r1][c1] = t1;
+                board[r2][c2] = t2;
+                animateSwap(r1, c1, r2, c2);
+                await delay(120);
+                renderBoard();
+                shakeScreen();
+                setInteraction(true);
+            }
+        }
+
+        function animateSwap(r1, c1, r2, c2) {
+            const el1 = boardEl.children[r1 * BOARD_SIZE + c1];
+            const el2 = boardEl.children[r2 * BOARD_SIZE + c2];
+            if (el1 && el2) {
+                const inner1 = el1.firstElementChild;
+                const inner2 = el2.firstElementChild;
+                if (inner1 && inner2) {
+                    inner1.style.transform = `translate(${(c2 - c1) * 45}px, ${(r2 - r1) * 45}px)`;
+                    inner2.style.transform = `translate(${(c1 - c2) * 45}px, ${(r1 - r2) * 45}px)`;
+                }
+            }
+        }
+
+        async function triggerStarPower(r1, c1, r2, c2) {
+            const t1 = board[r1][c1];
+            const t2 = board[r2][c2];
+
+            let starPos = t1 === 99 ? {r: r1, c: c1} : {r: r2, c: c2};
+            let commonType = t1 === 99 ? t2 : t1;
+
+            playCosmicStarSound();
+
+            if (commonType === 99) {
+                for (let r = 0; r < BOARD_SIZE; r++) {
+                    for (let c = 0; c < BOARD_SIZE; c++) {
+                        if (Math.random() < 0.5) {
+                            triggerTileFadeOut(r, c);
+                            board[r][c] = null;
+                            score += 20;
+                        }
+                    }
+                }
+            } else {
+                triggerTileFadeOut(starPos.r, starPos.c);
+                board[starPos.r][starPos.c] = null;
+
+                let count = 0;
+                for (let r = 0; r < BOARD_SIZE; r++) {
+                    for (let c = 0; c < BOARD_SIZE; c++) {
+                        if (board[r][c] === commonType) {
+                            triggerTileFadeOut(r, c);
+                            board[r][c] = null;
+                            count++;
+                        }
+                    }
+                }
+                score += count * 20;
+            }
+
+            scoreEl.textContent = score;
+            await delay(300);
+            await resolveCascades();
+        }
+
+        function scanForMatches() {
+            let matches = [];
+
+            // Horizontal Matches
+            for (let r = 0; r < BOARD_SIZE; r++) {
+                let len = 1;
+                let type = null;
+                let start = 0;
+                for (let c = 0; c < BOARD_SIZE; c++) {
+                    const current = board[r][c];
+                    if (current && current !== 99 && current === type) {
+                        len++;
+                    } else {
+                        if (len >= 3) {
+                            matches.push({ type, length: len, coords: getCoords(r, start, r, c - 1) });
+                        }
+                        type = current;
+                        len = 1;
+                        start = c;
+                    }
+                }
+                if (len >= 3) {
+                    matches.push({ type, length: len, coords: getCoords(r, start, r, BOARD_SIZE - 1) });
+                }
+            }
+
+            // Vertical Matches
+            for (let c = 0; c < BOARD_SIZE; c++) {
+                let len = 1;
+                let type = null;
+                let start = 0;
+                for (let r = 0; r < BOARD_SIZE; r++) {
+                    const current = board[r][c];
+                    if (current && current !== 99 && current === type) {
+                        len++;
+                    } else {
+                        if (len >= 3) {
+                            matches.push({ type, length: len, coords: getCoords(start, c, r - 1, c) });
+                        }
+                        type = current;
+                        len = 1;
+                        start = r;
+                    }
+                }
+                if (len >= 3) {
+                    matches.push({ type, length: len, coords: getCoords(start, c, BOARD_SIZE - 1, c) });
+                }
+            }
+
+            return matches;
+        }
+
+        function getCoords(r1, c1, r2, c2) {
+            let out = [];
+            for (let r = r1; r <= r2; r++) {
+                for (let c = c1; c <= c2; c++) {
+                    out.push({ r, c });
+                }
+            }
+            return out;
+        }
+
+        async function processTurn(matches, combo = 1) {
+            let toRemove = new Set();
+            let starsToSpawn = [];
+
+            matches.forEach(m => {
+                if (m.length >= 4) {
+                    const mid = m.coords[Math.floor(m.coords.length / 2)];
+                    starsToSpawn.push(mid);
+                }
+                m.coords.forEach(coord => {
+                    toRemove.add(`${coord.r},${coord.c}`);
+                });
+            });
+
+            toRemove.forEach(key => {
+                const [r, c] = key.split(',').map(Number);
+                triggerTileFadeOut(r, c);
+            });
+
+            playMatchSound();
+            await delay(160);
+
+            toRemove.forEach(key => {
+                const [r, c] = key.split(',').map(Number);
+                board[r][c] = null;
+            });
+
+            starsToSpawn.forEach(pos => {
+                board[pos.r][pos.c] = 99;
+            });
+
+            score += toRemove.size * 10 * combo;
+            scoreEl.textContent = score;
+
+            if (combo >= 3) {
+                comboAlert.classList.remove('hidden');
+                setTimeout(() => comboAlert.classList.add('hidden'), 1500);
+            }
+
+            await resolveCascades(combo);
+        }
+
+        function triggerTileFadeOut(r, c) {
+            const el = boardEl.children[r * BOARD_SIZE + c];
+            if (el) el.classList.add('fade-out-scale');
+        }
+
+        async function resolveCascades(combo = 1) {
+            let dropped = false;
+
+            for (let c = 0; c < BOARD_SIZE; c++) {
+                let empty = 0;
+                for (let r = BOARD_SIZE - 1; r >= 0; r--) {
+                    if (board[r][c] === null) {
+                        empty++;
+                    } else if (empty > 0) {
+                        board[r + empty][c] = board[r][c];
+                        board[r][c] = null;
+                        dropped = true;
+                    }
+                }
+                for (let k = 0; k < empty; k++) {
+                    board[k][c] = Math.floor(Math.random() * 6) + 1;
+                    dropped = true;
+                }
+            }
+
+            if (dropped) {
+                renderBoard();
+                for (let r = 0; r < 3; r++) {
+                    for (let c = 0; c < BOARD_SIZE; c++) {
+                        const el = boardEl.children[r * BOARD_SIZE + c];
+                        if (el) el.classList.add('fall-anim');
+                    }
+                }
+                await delay(200);
+            }
+
+            const cascades = scanForMatches();
+            if (cascades.length > 0) {
+                await processTurn(cascades, combo + 1);
+            } else {
+                setInteraction(true);
+                const gameEnded = checkEndConditions();
+                if (!gameEnded) {
+                    await checkAndShuffleIfNeeded();
+                }
+            }
+        }
+
+        function setInteraction(enabled) {
+            interactionBlocker.classList.toggle('hidden', enabled);
+        }
+
+        function delay(ms) {
+            return new Promise(r => setTimeout(r, ms));
+        }
+
+        function shakeScreen() {
+            boardContainer.classList.add('shake');
+            setTimeout(() => boardContainer.classList.remove('shake'), 350);
+        }
+
+        function checkEndConditions() {
+            const passed = score >= currentLevel.targetScore;
+            
+            if (passed || moves <= 0) {
+                // Prevent interactions while results show up
+                setInteraction(false);
+
+                const finalScore = score;
+                const target = currentLevel.targetScore;
+
+                document.getElementById('result-score').textContent = finalScore;
+                document.getElementById('result-target').textContent = target;
+
+                const rTitle = document.getElementById('result-title');
+                const rDesc = document.getElementById('result-desc');
+                const rBtn = document.getElementById('result-action-btn');
+
+                if (finalScore >= target) {
+                    rTitle.textContent = "Chapter Completed";
+                    rTitle.className = "serif-font text-xl text-emerald-400 font-bold mb-1";
+                    rDesc.textContent = `"Your ideas beat the block temporarily. The manuscript advances."`;
+                    
+                    // Unlock next level if not already unlocked
+                    if (!unlockedLevels.includes(currentLevel.id + 1) && currentLevel.id < 10) {
+                        unlockedLevels.push(currentLevel.id + 1);
+                        saveProgress(); // Persist progression to localStorage
+                    }
+
+                    if (currentLevel.id < 10) {
+                        rBtn.textContent = "Next Chapter";
+                        rBtn.onclick = () => initGame(LEVELS_DATA[currentLevel.id]);
+                    } else {
+                        rBtn.textContent = "See Reviews";
+                        rBtn.onclick = () => changeScreen('levels');
+                    }
+                } else {
+                    rTitle.textContent = "Writer's Block";
+                    rTitle.className = "serif-font text-xl text-red-500 font-bold mb-1";
+                    rDesc.textContent = `"Frustration was greater than inspiration in this chapter."`;
+                    rBtn.textContent = "Try Again";
+                    rBtn.onclick = () => initGame(currentLevel);
+                }
+
+                document.getElementById('gameover-modal').classList.remove('hidden');
+                return true;
+            }
+            return false;
+        }
+    </script>
+</body>
+</html>
