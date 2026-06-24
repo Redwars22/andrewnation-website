@@ -1,6 +1,8 @@
-# 🚀 AndrewScript (Linguagem de Programação)
+# 🚀 AndrewScript v1.0
 
 Uma linguagem de script leve, interpretada linha por linha, construída do zero sobre C++. O motor executa em tempo real através de um REPL (terminal interativo) com suporte a variáveis dinâmicas, operações aritméticas básicas, condicionais estruturadas e loops de repetição.
+
+[CÓDIGO FONTE](https://github.com/andrewnationdev/andrew-script/)
 
 ---
 
@@ -24,6 +26,7 @@ Não precisa declarar tipo. Basta atribuir um valor matemático ou direto.
 x = 10
 y = 5
 resultado = x * y + 2
+nome = "Andrew"
 ```
 ### 2. Entrada e Saída (I/O)
 `write(expressão)`: Imprime o resultado de uma variável ou conta matemática na tela.
@@ -33,6 +36,7 @@ resultado = x * y + 2
 ```
 read(idade)
 write(idade + 1)
+write("Hello world!")
 ```
 
 ### 3. Condicionais (if)
@@ -50,6 +54,18 @@ Loop compacto indexado por vírgulas. Define (atribuição inicial, condição d
 ```
 for(i = 0, i < 10, 2) write(i)
 ```
+
+### 5. Executar Arquivos de Script
+
+No interpretador, use `sc_open(nome_do_arquivo)` para abrir um arquivo AndrewScript.
+
+### 6. Outras Funções
+
+|Função|Descrição|
+|---|---|
+|`delay(x)`|Delay em milissegundos|
+|`import(nome_arquivo)`|Importa arquivos de código-fonte para o projeto|
+|`clear()`|Limpa o console|
 
 ### 🛠️ Como Compilar e Rodar
 Como o projeto está separado em múltiplos arquivos, o compilador do C++ (g++) precisa juntar todos os arquivos de implementação (.cpp) de uma vez só.
