@@ -2,9 +2,7 @@
 
 Projeto de vitrine e catálogo de jogos construído com Next.js, consumindo a API da RAWG para listar títulos, exibir detalhes e simular funcionalidades de loja como busca, filtro e carrinho.
 
-[REPOSITÓRIO OFICIAL](https://github.com/andrewnationdev/project-gamehouse)
-
-[PRÉVIA ONLINE](https://projectgamehouse.vercel.app)
+[REPOSITÓRIO OFICIAL](https://github.com/andrewnationdev/project-gamehouse) OU [PRÉVIA ONLINE](https://projectgamehouse.vercel.app)
 
 ## DESCRIÇÃO
 
