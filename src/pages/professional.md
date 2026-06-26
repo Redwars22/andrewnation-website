@@ -1,7 +1,6 @@
 ![stats](https://github-readme-stats.vercel.app/api/top-langs/?username=redwars22&layout=compact&langs_count=16&theme=dark)
 ![stats](https://github-readme-stats.vercel.app/api?username=redwars22&show_icons=true&theme=dark&include_all_commits=true&count_private=true)
 
-
 # Trajetória Profissional e Acadêmica
 
 **💼 Estágio na MADATECH - Insurtech da Madalozzo Seguros**
@@ -9,6 +8,8 @@
 *11 de Abril de 2022 - 11 de Abril de 2023*
 
 > **Atividades Desenvolvidas:** Manutenção do aplicativo e do portal do Madaseg, feitos em ReactNative e React/NextJS respectivamente e do site da Madalozzo.
+
+[CURRÍCULO EM PDF](https://andrewnationdev.vercel.app/curriculos/curriculo_2026.pdf)
 
 ## Trajetória Acadêmica
 **🎓 Bacharelado em Engenharia de Software - Universidade Estadual de Ponta Grossa**
