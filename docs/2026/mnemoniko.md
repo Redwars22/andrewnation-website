@@ -1,4 +1,4 @@
-# Documentação do aplicativo Mnemóniko
+# 🎴 Mnemóniko
 
 ## Visão geral
 
