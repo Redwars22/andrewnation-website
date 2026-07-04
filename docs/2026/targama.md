@@ -1,4 +1,4 @@
-# Andrew Targama (Tradutor)
+# ㊗️ Andrew Targama (Tradutor)
 O Targama é uma aplicação de tradução pensada para ser rápida, simples e prática. Ela oferece traduções diretamente na interface, permite salvar traduções favoritas localmente no navegador e prioriza uma experiência limpa e responsiva em dispositivos móveis e desktop. Por trás, ele usa a API do DeepL para as traduções.
 
 ![Captura de Tela 1 do Targama](https://andrewnationdev.vercel.app/img/targama/targama-1.png)

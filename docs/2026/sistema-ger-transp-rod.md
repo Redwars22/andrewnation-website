@@ -1,4 +1,4 @@
-# SGTRod (Sistema de Gerenciamento de Transporte Rodoviário)
+# 🚏 SGTRod (Sistema de Gerenciamento de Transporte Rodoviário)
 
 Este é um sistema robusto para gestão de frotas de ônibus, motoristas, itinerários (linhas) e emissão de passagens com escolha de poltronas. Desenvolvido com **Laravel 12** e **Filament PHP v3** (painel administrativo ultra responsivo).
 

@@ -1,4 +1,4 @@
-# ClimaSevero (NOVO)
+# ⛅ ClimaSevero (NOVO)
 
 Essa é uma versão atualizada e melhorada do ClimaSevero (agora legacy) que eu havia feito em Svelt. Agora, decidi refazê-lo em ReactJS, TypeScript e Tailwind, a fim de melhorar a experiência do usuário. A tela inicial do aplicativo é simples e concisa, de modo a auxiliar o usuário na obtenção dos dados sem a necessidade de muitos toques/cliques. Se está à procura da versão legacy, [clique aqui](https://andrewnationdev.vercel.app/docs/projects/climasevero).
 

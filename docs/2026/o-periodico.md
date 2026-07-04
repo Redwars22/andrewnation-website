@@ -1,4 +1,4 @@
-# O Periódico
+# 📰 O Periódico
 
 ## Visão geral
 

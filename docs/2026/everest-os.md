@@ -1,4 +1,4 @@
-# EverestOS (Simulação de SO em C)
+# 🖥️ EverestOS (Simulação de SO em C)
 
 O EverestOS é uma simulação de um sistema operacional embarcado para um celular básico fictício (feature phone), desenvolvida em C.
 
