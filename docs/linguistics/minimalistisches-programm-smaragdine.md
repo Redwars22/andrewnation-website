@@ -1,6 +1,8 @@
 # SMARAGDINE MIT DEM MINIMALISTICHEN PROGRAMM ERKLÄRT
 
-In dieser Sektion beschreibe ich die basische Satzstruktur des Smaragdines, aber es ist keine komplette Grammatik. Die Hauptsatzstruktur ist `SUBJECT + VERB + OBJEKT` in deklarativen Sätzen. Es bedeutet, dass die Komplemente der Verben ihnen folgen. Die Adjektive folgen den Substantiven, die sie beschreiben. 
+In diesem Dokument benutze ich das Minimalistische Programm (MP), das eine sprachwissenschaftliche Theorie von Noam Chomsky in seinem Buch beschreibt, um Smaragdine zu erklären. Smaragdine ist eine künstliche Sprache, von Celeste gebaut. Ich will die basischen Operationen des MP anwenden, um grammatische Sätze in Smaragdine zu erbringen, nämlich „Select“, „Merge“ und „Move“.
+
+Hier beschreibe ich die basische Satzstruktur des Smaragdines, aber es ist keine komplette Grammatik. Die Hauptsatzstruktur ist `SUBJECT + VERB + OBJEKT` in deklarativen Sätzen. Es bedeutet, dass die Komplemente der Verben ihnen folgen. Die Adjektive folgen den Substantiven, die sie beschreiben. 
 
 Es gibt Kongruenz zwischen dem Verb und seinem grammatischen Subjekt (Zahl und Person) und auch zwischen den Adjektiven und den Substantiven, die beschrieben werden, innerhalb der NP (Kasus, Genus und Zahl).
 
