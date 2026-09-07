@@ -4,8 +4,8 @@ QalamStudio é um estúdio de escrita e gerenciador de histórias web, focado na
 
 [EXECUTAR NO NAVEGADOR](https://qalamstudio.vercel.app)
 
-![https://andrewnationdev.vercel.app/img/qalamstudio/1.png]
-![https://andrewnationdev.vercel.app/img/qalamstudio/2.png]
+![QalamStudio - Captura de Tela 1](https://andrewnationdev.vercel.app/img/qalamstudio/1.png)
+![QalamStudio - Captura de Tela 2]https://andrewnationdev.vercel.app/img/qalamstudio/2.png)
 ## 📸 Visão Geral da Interface
 
 - Editor WYSIWYG em Tempo Real: Formatação direta.
