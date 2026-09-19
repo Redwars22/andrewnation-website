@@ -1,4 +1,4 @@
-# 📋 Andrew Paiapala - Especificação do Aplicativo
+# 📋 Andrew Paiapala
 
 Este é o prompt usado no Gemini para a construção do aplicativo de documentação técnica de software.
 
